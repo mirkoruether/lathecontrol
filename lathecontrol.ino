@@ -7,9 +7,8 @@ RotaryEncoder encoder(A8, A9);
 
 void setup()
 {
-    #ifdef USBCON
     Serial.begin(9600);
-    #endif
+    Serial.println("Hello World!");
 
     // Enable Pin Change Interrupt for Pins A8, A9 = PCINT16, PCINT17 
     // PCINT16 and PCINT17 are part of PCIE2
@@ -31,10 +30,8 @@ void loop()
 
     int newPos = encoder.getPosition();
     if (pos != newPos) {
-        #ifdef USBCON
         Serial.print(newPos);
         Serial.println();
-        #endif
         pos = newPos;
     }
 }
