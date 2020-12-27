@@ -1,2 +1,9 @@
 /stuff
-/board
+/board/**
+!/board/cam
+!/board/*.sch
+!/board/*.kicad_pcb
+!/board/*.pro
+!/board/*.net
+!/board/cam/*.drl
+!/board/cam/*.gbr

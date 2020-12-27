@@ -1,0 +1,324 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Lathecontrol-Addon for Ardunio Mega 2560"
+Date "2020-05-25"
+Rev "1"
+Comp "Mirkosoft"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x08_Male J5
+U 1 1 5EDF162C
+P 1400 1300
+F 0 "J5" H 1508 1781 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 1508 1690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1400 1300 50  0001 C CNN
+F 3 "~" H 1400 1300 50  0001 C CNN
+	1    1400 1300
+	1    0    0    -1  
+$EndComp
+Text Label 1900 1000 0    50   ~ 0
+PIN_A08
+Text Label 1900 1100 0    50   ~ 0
+PIN_A09
+Text Label 1900 1200 0    50   ~ 0
+PIN_A10
+Text Label 1900 1300 0    50   ~ 0
+PIN_A11
+Text Label 1900 1400 0    50   ~ 0
+PIN_A12
+Text Label 1900 1500 0    50   ~ 0
+PIN_A13
+Text Label 1900 1600 0    50   ~ 0
+PIN_A14
+Text Label 1900 1700 0    50   ~ 0
+PIN_A15
+Wire Wire Line
+	1600 1000 1900 1000
+Wire Wire Line
+	1600 1100 1900 1100
+Wire Wire Line
+	1900 1200 1600 1200
+Wire Wire Line
+	1900 1300 1600 1300
+Wire Wire Line
+	1900 1400 1600 1400
+Wire Wire Line
+	1900 1500 1600 1500
+Wire Wire Line
+	1900 1600 1600 1600
+Wire Wire Line
+	1900 1700 1600 1700
+Wire Wire Line
+	3200 1550 3300 1550
+$Comp
+L power:GND #PWR019
+U 1 1 5F054C85
+P 3200 1550
+F 0 "#PWR019" H 3200 1300 50  0001 C CNN
+F 1 "GND" H 3205 1377 50  0000 C CNN
+F 2 "" H 3200 1550 50  0001 C CNN
+F 3 "" H 3200 1550 50  0001 C CNN
+	1    3200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2750 3300 2750
+$Comp
+L power:GND #PWR020
+U 1 1 5F050A49
+P 3200 2750
+F 0 "#PWR020" H 3200 2500 50  0001 C CNN
+F 1 "GND" H 3205 2577 50  0000 C CNN
+F 2 "" H 3200 2750 50  0001 C CNN
+F 3 "" H 3200 2750 50  0001 C CNN
+	1    3200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1450 3300 1450
+Wire Wire Line
+	3200 2650 3300 2650
+Text Label 3200 1450 2    50   ~ 0
+PIN_A14
+Text Label 3200 2650 2    50   ~ 0
+PIN_A15
+Wire Wire Line
+	5000 2700 5100 2700
+Wire Wire Line
+	5000 2600 5000 2700
+Wire Wire Line
+	4900 2800 5100 2800
+Wire Wire Line
+	4900 2600 4900 2800
+Wire Wire Line
+	4800 2900 5100 2900
+Wire Wire Line
+	4800 2600 4800 2900
+Text Label 4800 2600 1    50   ~ 0
+PIN_A11
+Text Label 4900 2600 1    50   ~ 0
+PIN_A12
+Text Label 5000 2600 1    50   ~ 0
+PIN_A13
+Wire Wire Line
+	5100 3000 4550 3000
+$Comp
+L power:+5V #PWR023
+U 1 1 5F0445C6
+P 4550 3000
+F 0 "#PWR023" H 4550 2850 50  0001 C CNN
+F 1 "+5V" H 4565 3173 50  0000 C CNN
+F 2 "" H 4550 3000 50  0001 C CNN
+F 3 "" H 4550 3000 50  0001 C CNN
+	1    4550 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3100 4550 3100
+$Comp
+L power:GND #PWR024
+U 1 1 5F0445BF
+P 4550 3100
+F 0 "#PWR024" H 4550 2850 50  0001 C CNN
+F 1 "GND" H 4555 2927 50  0000 C CNN
+F 2 "" H 4550 3100 50  0001 C CNN
+F 3 "" H 4550 3100 50  0001 C CNN
+	1    4550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J11
+U 1 1 5F0445B9
+P 5300 2900
+F 0 "J11" H 5272 2832 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5272 2923 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 5300 2900 50  0001 C CNN
+F 3 "~" H 5300 2900 50  0001 C CNN
+	1    5300 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 1450 5100 1450
+Wire Wire Line
+	5000 1350 5000 1450
+Wire Wire Line
+	4900 1550 5100 1550
+Wire Wire Line
+	4900 1350 4900 1550
+Wire Wire Line
+	4800 1650 5100 1650
+Wire Wire Line
+	4800 1350 4800 1650
+Text Label 4800 1350 1    50   ~ 0
+PIN_A08
+Text Label 4900 1350 1    50   ~ 0
+PIN_A09
+Text Label 5000 1350 1    50   ~ 0
+PIN_A10
+Wire Wire Line
+	5100 1750 4550 1750
+$Comp
+L power:+5V #PWR021
+U 1 1 5EFF7ABC
+P 4550 1750
+F 0 "#PWR021" H 4550 1600 50  0001 C CNN
+F 1 "+5V" H 4565 1923 50  0000 C CNN
+F 2 "" H 4550 1750 50  0001 C CNN
+F 3 "" H 4550 1750 50  0001 C CNN
+	1    4550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1850 4550 1850
+$Comp
+L power:GND #PWR022
+U 1 1 5EFF3927
+P 4550 1850
+F 0 "#PWR022" H 4550 1600 50  0001 C CNN
+F 1 "GND" H 4555 1677 50  0000 C CNN
+F 2 "" H 4550 1850 50  0001 C CNN
+F 3 "" H 4550 1850 50  0001 C CNN
+	1    4550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 5EFE6EBA
+P 3500 1550
+F 0 "J6" H 3472 1432 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 3472 1523 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 3500 1550 50  0001 C CNN
+F 3 "~" H 3500 1550 50  0001 C CNN
+	1    3500 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 5EFE3E90
+P 3500 2750
+F 0 "J7" H 3472 2632 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 3472 2723 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 3500 2750 50  0001 C CNN
+F 3 "~" H 3500 2750 50  0001 C CNN
+	1    3500 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J10
+U 1 1 5EF5FE8F
+P 5300 1650
+F 0 "J10" H 5272 1582 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5272 1673 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 5300 1650 50  0001 C CNN
+F 3 "~" H 5300 1650 50  0001 C CNN
+	1    5300 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 3250 2100 3250
+$Comp
+L power:GND #PWR026
+U 1 1 5EE24093
+P 2450 3350
+F 0 "#PWR026" H 2450 3100 50  0001 C CNN
+F 1 "GND" H 2455 3177 50  0000 C CNN
+F 2 "" H 2450 3350 50  0001 C CNN
+F 3 "" H 2450 3350 50  0001 C CNN
+	1    2450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2400 2100 2400
+$Comp
+L power:+5V #PWR025
+U 1 1 5EE20EAE
+P 2450 2300
+F 0 "#PWR025" H 2450 2150 50  0001 C CNN
+F 1 "+5V" H 2465 2473 50  0000 C CNN
+F 2 "" H 2450 2300 50  0001 C CNN
+F 3 "" H 2450 2300 50  0001 C CNN
+	1    2450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J9
+U 1 1 5EE7F666
+P 1400 3250
+F 0 "J9" H 1508 3431 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 3340 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1400 3250 50  0001 C CNN
+F 3 "~" H 1400 3250 50  0001 C CNN
+	1    1400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5EED3000
+P 2100 2300
+F 0 "#FLG01" H 2100 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 2473 50  0000 C CNN
+F 2 "" H 2100 2300 50  0001 C CNN
+F 3 "~" H 2100 2300 50  0001 C CNN
+	1    2100 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 2400
+Wire Wire Line
+	2100 2400 2450 2400
+Wire Wire Line
+	2100 2400 2100 2300
+Wire Wire Line
+	2450 2300 2450 2400
+Wire Wire Line
+	2450 3250 2450 3350
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5EEE96D7
+P 2100 3150
+F 0 "#FLG02" H 2100 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 3323 50  0000 C CNN
+F 2 "" H 2100 3150 50  0001 C CNN
+F 3 "~" H 2100 3150 50  0001 C CNN
+	1    2100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3150 2100 3250
+Connection ~ 2100 3250
+Wire Wire Line
+	2100 3250 2450 3250
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5FEB5288
+P 1400 2400
+F 0 "J1" H 1372 2282 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 1372 2373 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1400 2400 50  0001 C CNN
+F 3 "~" H 1400 2400 50  0001 C CNN
+	1    1400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FEB8F45
+P 1900 2550
+F 0 "#PWR01" H 1900 2300 50  0001 C CNN
+F 1 "GND" H 1905 2377 50  0000 C CNN
+F 2 "" H 1900 2550 50  0001 C CNN
+F 3 "" H 1900 2550 50  0001 C CNN
+	1    1900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2500 1900 2500
+Wire Wire Line
+	1900 2500 1900 2550
+$EndSCHEMATC
