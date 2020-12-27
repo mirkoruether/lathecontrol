@@ -5,5 +5,6 @@
 !/board/*.kicad_pcb
 !/board/*.pro
 !/board/*.net
+!/board/*.lib
 !/board/cam/*.drl
 !/board/cam/*.gbr
