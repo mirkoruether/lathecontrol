@@ -3,6 +3,7 @@
         {
             "name": "Arduino",
             "includePath": [
+                "${workspaceFolder}",
                 "${workspaceFolder}\\**",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\mega",
@@ -16,12 +17,14 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "USBCON"
+                "USBCON",
+                "ARDUINO=10812",
+                "__AVR_ATmega2560__"
             ],
             "compilerPath": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\bin\\avr-gcc.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64"
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4

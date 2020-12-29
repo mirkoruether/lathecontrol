@@ -1,4 +1,5 @@
 /stuff
+
 /board/**
 !/board/cam
 !/board/*.sch
@@ -8,3 +9,5 @@
 !/board/*.lib
 !/board/cam/*.drl
 !/board/cam/*.gbr
+
+/casing/**
