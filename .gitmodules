@@ -1,12 +1,12 @@
-[submodule "arduino/include/RotaryEncoder"]
-	path = arduino/include/RotaryEncoder
+[submodule "RotaryEncoder"]
+	path = lib/RotaryEncoder
 	url = https://github.com/mathertel/RotaryEncoder.git
-[submodule "arduino/include/LCDWIKI_GUI"]
-	path = arduino/include/LCDWIKI_GUI
+[submodule "LCDWIKI_GUI"]
+	path = lib/LCDWIKI_GUI
 	url = https://github.com/lcdwiki/LCDWIKI_gui.git
-[submodule "arduino/include/LCDWIKI_KBV"]
-	path = arduino/include/LCDWIKI_KBV
+[submodule "LCDWIKI_KBV"]
+	path = lib/LCDWIKI_KBV
 	url = https://github.com/lcdwiki/LCDWIKI_kbv.git
-[submodule "arduino/include/TouchScreen"]
-	path = arduino/include/TouchScreen
+[submodule "TouchScreen"]
+	path = lib/TouchScreen
 	url = https://github.com/adafruit/Adafruit_TouchScreen.git
