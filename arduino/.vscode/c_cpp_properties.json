@@ -7,11 +7,7 @@
                 "${workspaceFolder}\\**",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\mega",
-                "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include",
-                "C:\\Program Files (x86)\\Arduino\\libraries\\LCDWIKI_GUI",
-                "C:\\Program Files (x86)\\Arduino\\libraries\\LCDWIKI_KBV",
-                "C:\\Program Files (x86)\\Arduino\\libraries\\TouchScreen",
-                "C:\\Program Files (x86)\\Arduino\\libraries\\RotaryEncoder"
+                "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include"
             ],
             "defines": [
                 "_DEBUG",
