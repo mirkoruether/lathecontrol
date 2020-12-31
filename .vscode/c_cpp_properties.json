@@ -18,6 +18,8 @@
                 "UNICODE",
                 "_UNICODE",
                 "USBCON",
+                "ARDUINO_AVR_MEGA2560",
+                "ARDUINO_ARCH_AVR",
                 "ARDUINO=10812",
                 "__AVR_ATmega2560__"
             ],
