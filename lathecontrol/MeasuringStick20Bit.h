@@ -1,5 +1,7 @@
 #include <Arduino.h>
 
+#define DEFAULT_TIMEOUT_MICROS 1000000UL
+
 class MeasuringStick20Bit
 {
 private:
@@ -69,22 +71,33 @@ public:
         return get_sign() * get_raw_unsigned_value();
     }
 
-    float calc_mm()
+    inline bool is_outdated(unsigned long timeout_micros = DEFAULT_TIMEOUT_MICROS)
     {
-        if (is_inch())
-        {
-            return get_raw_signed_value() * (25.4 * 0.0005);
-        }
-        return get_raw_signed_value() * 0.01;
+        if (timeout_micros <= 0) return false;
+        return (micros() - lastdata_micros) > timeout_micros;
     }
 
-    float calc_inch()
+    int32_t get_hundredth_mm(unsigned long timeout_micros = DEFAULT_TIMEOUT_MICROS)
     {
-        if (is_inch())
-        {
-            return get_raw_signed_value() * 0.0005;
-        }
-        return get_raw_signed_value() * (0.01 / 25.4);
+        if(is_outdated(timeout_micros) || is_inch()) return INT32_MAX;
+        return get_raw_signed_value();
+    }
+
+    int32_t get_half_mil(unsigned long timeout_micros = DEFAULT_TIMEOUT_MICROS)
+    {
+        if(is_outdated(timeout_micros) || is_mm()) return INT32_MAX;
+        return get_raw_signed_value();
+    }
+
+    float calc_mm(unsigned long timeout_micros = DEFAULT_TIMEOUT_MICROS)
+    {
+        if(is_outdated(timeout_micros)) return NAN;
+        return get_raw_signed_value() * (is_inch() ? 25.4 * 0.0005 : 0.01);
+    }
+
+    float calc_inch(unsigned long timeout_micros = DEFAULT_TIMEOUT_MICROS)
+    {
+        if(is_outdated(timeout_micros)) return NAN;
+        return get_raw_signed_value() * (is_inch() ? 0.0005 : 0.01 / 25.4);
     }
 };
-
