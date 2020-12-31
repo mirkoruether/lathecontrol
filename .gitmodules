@@ -10,3 +10,6 @@
 [submodule "TouchScreen"]
 	path = lib/TouchScreen
 	url = https://github.com/adafruit/Adafruit_TouchScreen.git
+[submodule "PinChangeInterrupt"]
+	path = lib/PinChangeInterrupt
+	url = https://github.com/NicoHood/PinChangeInterrupt
