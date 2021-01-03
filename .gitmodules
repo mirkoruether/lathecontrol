@@ -13,3 +13,6 @@
 [submodule "PinChangeInterrupt"]
 	path = lib/PinChangeInterrupt
 	url = https://github.com/NicoHood/PinChangeInterrupt
+[submodule "OneButton"]
+	path = lib/OneButton
+	url = https://github.com/mathertel/OneButton
