@@ -38,8 +38,8 @@ void attach_matching_interrupt(InterruptType inttype, uint8_t pin, void (*userFu
 template<uint8_t PIN_CLK, uint8_t PIN_DAT>
 MeasuringStick20Bit* make_measurestick(InterruptType CLK_INTERRUPT_TYPE = INT)
 {
-    static MeasuringStick20Bit ms;
-    static void (*func)() = [](){ms.next_bit(digitalRead(PIN_DAT));};
+    static MeasuringStick20Bit ms(PIN_DAT);
+    static void (*func)() = [](){ms.clk_rising_edge();};
     pinMode(PIN_CLK, INPUT_PULLUP);
     pinMode(PIN_DAT, INPUT_PULLUP);
     attach_matching_interrupt(CLK_INTERRUPT_TYPE, PIN_CLK, func, RISING);

@@ -5,6 +5,8 @@
 class MeasuringStick20Bit
 {
 private:
+    int dat_pin;
+
     uint32_t tempdata;
     uint32_t data;
 
@@ -14,10 +16,15 @@ private:
     unsigned long lastbit_micros;
 
 public:
-    MeasuringStick20Bit(): 
-        tempdata(0), data(0), bitcounter(0), 
+    MeasuringStick20Bit(int dat_pin): 
+        dat_pin(dat_pin), tempdata(0), data(0), bitcounter(0), 
         lastbit_micros(0), lastdata_micros(0)
     {}
+
+    void clk_rising_edge()
+    {
+        next_bit(digitalRead(dat_pin));
+    }
 
     void next_bit(bool databit)
     {
