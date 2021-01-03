@@ -21,12 +21,12 @@ public:
         lastbit_micros(0), lastdata_micros(0)
     {}
 
-    void clk_rising_edge()
+    bool clk_rising_edge()
     {
-        next_bit(digitalRead(dat_pin));
+        return next_bit(digitalRead(dat_pin));
     }
 
-    void next_bit(bool databit)
+    bool next_bit(bool databit)
     {
         long currbit_micros = micros();
 
@@ -45,7 +45,9 @@ public:
         {
             data = tempdata;
             lastdata_micros = currbit_micros;
+            return true;
         }
+        return false;
     }
 
     inline bool is_mm()

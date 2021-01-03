@@ -54,12 +54,12 @@ class AxisGuiSegment
 {
 private:
     LCDWIKI_GUI &lcd;
-    char name;
-    String unit;
-    int16_t basey;
-    uint8_t decimals;
-    int32_t value;
-    uint8_t markdigit;
+    const char name;
+    const String unit;
+    const int16_t basey;
+    const uint8_t decimals;
+    int32_t _value;
+    uint8_t _markdigit;
 
     bool redraw_needed_base = true;
     bool redraw_needed_value = true;
@@ -71,23 +71,33 @@ public:
         int32_t initial_value = INT32_MAX, uint8_t initial_markdigit = 255
     ):
         lcd(lcd), name(name), unit(unit), basey(basey), decimals(decimals),
-        value(initial_value), markdigit(initial_markdigit)
+        _value(initial_value), _markdigit(initial_markdigit)
     {}
 
     bool set_value(int32_t newvalue)
     {
-        if (value == newvalue)
-            return false;
-        value = newvalue;
-        redraw_needed_value = true;
+        noInterrupts();
+        bool changed = _value != newvalue;
+        if (changed)
+        {
+            _value = newvalue;
+            redraw_needed_value = true;
+        }
+        interrupts();
+        return changed;
     }
 
     bool set_markdigit(int32_t newmarkdigit)
     {
-        if (markdigit == newmarkdigit)
-            return false;
-        markdigit = newmarkdigit;
-        redraw_needed_mark = true;
+        noInterrupts();
+        bool changed = _markdigit != newmarkdigit;
+        if (changed)
+        {
+            _markdigit = newmarkdigit;
+            redraw_needed_value = true;
+        }
+        interrupts();
+        return changed;
     }
 
     void redraw(bool force = false)
@@ -110,13 +120,12 @@ private:
         // Draw axis name
         lcd.Set_Text_Size(TEXTSIZE_NAME);
         lcd.Print_String(String(name), XPOS_NAMEUNIT, basey + GAP_BORDER_CONTENT);
-        
+
         // Draw axis unit
-        if (unit.length() > 2)
-            unit = unit.substring(0, 2);
+        String unitcut = unit.length() > 2 ? unit.substring(0, 2) : unit;
         lcd.Set_Text_Size(TEXTSIZE_UNIT);
-        lcd.Print_String(unit, XPOS_NAMEUNIT, basey + GAP_BORDER_CONTENT + HEIGHT_NAME + GAP_NAME_UNIT);
-        
+        lcd.Print_String(unitcut, XPOS_NAMEUNIT, basey + GAP_BORDER_CONTENT + HEIGHT_NAME + GAP_NAME_UNIT);
+
         // Draw Border
         lcd.Draw_Rectangle(0, basey, WIDTH_TOTAL - 1, basey + HEIGHT_TOTAL - 1);
     }
@@ -128,6 +137,11 @@ private:
 
     void draw_value()
     {
+        noInterrupts();
+        int32_t value = _value;
+        redraw_needed_value = false;
+        interrupts();
+
         lcd.Set_Text_Mode(0); // Mode: Override background
         lcd.Set_Text_colour(RED);
         lcd.Set_Text_Back_colour(BLACK);
@@ -160,6 +174,11 @@ private:
 
     void draw_mark()
     {
+        noInterrupts();
+        uint8_t markdigit = _markdigit;
+        redraw_needed_mark = false;
+        interrupts();
+
         lcd.Fill_Rect(XPOS_VALUE, basey + HEIGHT_VALUE, WIDTH_VALUE - 2, HEIGHT_MARK, BLACK);
         if(markdigit < DIGITS)
         {
