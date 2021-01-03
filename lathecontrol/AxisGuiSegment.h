@@ -23,7 +23,7 @@
 #define GAP_BORDER_CONTENT 5
 
 #define WIDTH_TOTAL 320
-#define WIDTH_VALUE (6 * CHARWIDTH_VALUE + CHARWIDTH_VALUE / 2)
+#define WIDTH_VALUE (6 * CHARWIDTH_VALUE + CHARWIDTH_VALUE / 3)
 
 #define XPOS_NAMEUNIT (GAP_BORDER_CONTENT)
 #define XPOS_VALUE (WIDTH_TOTAL - WIDTH_VALUE - GAP_BORDER_CONTENT)
@@ -94,7 +94,7 @@ public:
         if (changed)
         {
             _markdigit = newmarkdigit;
-            redraw_needed_value = true;
+            redraw_needed_mark = true;
         }
         interrupts();
         return changed;
@@ -157,11 +157,11 @@ private:
 
         int16_t x_signchar = XPOS_VALUE;
         int16_t x_val = x_signchar + CHARWIDTH_VALUE;
-        int16_t x_commachar = x_val + (DIGITS - decimals) * CHARWIDTH_VALUE - CHARWIDTH_VALUE / 3;
+        int16_t x_commachar = x_val + (DIGITS - decimals) * CHARWIDTH_VALUE;
 
         for (int i = 0; i < DIGITS; i++)
         {
-            int16_t commaoffset = i < DIGITS - decimals ? 0 : CHARWIDTH_VALUE / 2;
+            int16_t commaoffset = i < DIGITS - decimals ? 0 : CHARWIDTH_VALUE / 3;
             lcd.Draw_Char(
                 x_val + i * CHARWIDTH_VALUE + commaoffset, y,
                 get_char(value, DIGITS - i - 1),
@@ -169,7 +169,7 @@ private:
             );
         }
         lcd.Draw_Char(x_signchar, y, value >= 0 ? '+' : '-', RED, BLACK, TEXTSIZE_VALUE, 1);
-        lcd.Draw_Char(x_commachar, y, '.', RED, BLACK, TEXTSIZE_VALUE, 1);
+        lcd.Fill_Rect(x_commachar, y + 6 * TEXTSIZE_VALUE, TEXTSIZE_VALUE, TEXTSIZE_VALUE, RED);
     }
 
     void draw_mark()
@@ -182,7 +182,7 @@ private:
         lcd.Fill_Rect(XPOS_VALUE, basey + HEIGHT_VALUE, WIDTH_VALUE - 2, HEIGHT_MARK, BLACK);
         if(markdigit < DIGITS)
         {
-            int16_t commaoffset = markdigit < DIGITS - decimals ? 0 : CHARWIDTH_VALUE / 2;
+            int16_t commaoffset = markdigit < DIGITS - decimals ? 0 : CHARWIDTH_VALUE / 3;
             int16_t x_mark = XPOS_VALUE + commaoffset + CHARWIDTH_VALUE * (markdigit + 1); // +1 for sign character
             lcd.Draw_Char(x_mark + CHARWIDTH_VALUE / 4, basey + GAP_BORDER_CONTENT + HEIGHT_VALUE, '^', RED, BLACK, TEXTSIZE_VALUE / 2, 1);
         }
