@@ -8,7 +8,7 @@
 
 #define AXIS_COUNT 2
 
-#define AXIS0_NAME 'X'
+#define AXIS0_NAME 'd'
 #define AXIS0_UNIT "mm"
 #define AXIS0_DECIMALS 2
 #define AXIS0_BTNPIN A14
@@ -125,14 +125,18 @@ uint8_t active_exp = 255;
 
 int32_t get_axis_input_value(uint8_t axis)
 {
+    int32_t val1, val2;
     switch (axis)
     {
     case 0:
-        return ms[0]->get_hundredth_mm();
+        val1 = ms[0]->get_hundredth_mm();
+        return val1 != INT32_MAX ? 2 * val1 : INT32_MAX;
     case 1:
-        int32_t val1 = ms[1]->get_hundredth_mm();
-        int32_t val2 = ms[2]->get_hundredth_mm();
-        return val1 != INT32_MAX && val2 != INT32_MAX ? val1 + val2: INT32_MAX;
+        val1 = ms[1]->get_hundredth_mm();
+        val2 = ms[2]->get_hundredth_mm();
+        if(val2 == INT32_MAX)
+            val2 = 0;
+        return val1 != INT32_MAX ? val1 + val2 : INT32_MAX;
     default:
         INT32_MAX;
     }
