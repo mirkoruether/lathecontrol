@@ -87,7 +87,12 @@ public:
         return changed;
     }
 
-    bool set_markdigit(int32_t newmarkdigit)
+    bool set_markexp(uint8_t newmarkexp)
+    {
+        return set_markdigit(DIGITS - newmarkexp - 1);
+    }
+
+    bool set_markdigit(uint8_t newmarkdigit)
     {
         noInterrupts();
         bool changed = _markdigit != newmarkdigit;
