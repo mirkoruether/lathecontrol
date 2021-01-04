@@ -76,11 +76,12 @@ MeasuringStick20Bit *ms[]{
 template<uint8_t AXIS_IDX>
 OneButton* make_axis_btn(uint8_t pin)
 {
-    static OneButton btn(pin);
+    static OneButton btn(pin, true, true);
     static void (*func1)() = [](){axis_button_short_click(AXIS_IDX);};
     static void (*func2)() = [](){axis_button_long_press(AXIS_IDX);};
     btn.attachClick(func1);
     btn.attachLongPressStart(func2);
+    return &btn;
 }
 
 OneButton *axis_btn[]{
@@ -129,7 +130,9 @@ int32_t get_axis_input_value(uint8_t axis)
     case 0:
         return ms[0]->get_hundredth_mm();
     case 1:
-        return ms[1]->get_hundredth_mm() + ms[2]->get_hundredth_mm();
+        int32_t val1 = ms[1]->get_hundredth_mm();
+        int32_t val2 = ms[2]->get_hundredth_mm();
+        return val1 != INT32_MAX && val2 != INT32_MAX ? val1 + val2: INT32_MAX;
     default:
         INT32_MAX;
     }
@@ -137,18 +140,18 @@ int32_t get_axis_input_value(uint8_t axis)
 
 void axis_button_short_click(uint8_t axis)
 {
-    int8_t new_active_axis = 255;
-    int8_t new_active_exp = 255;
+    uint8_t new_active_axis = 255;
+    uint8_t new_active_exp = 255;
 
     if(active_axis != axis)
     {
         new_active_axis = axis;
-        new_active_exp = 4;
+        new_active_exp = 3;
     }
     else if(active_exp > 0)
     {
+        new_active_axis = axis;
         new_active_exp = active_exp - 1;
-        return;
     }
 
     noInterrupts();
@@ -199,13 +202,14 @@ void setup()
 }
 
 void loop()
-{    
+{
     for(uint8_t i = 0; i < AXIS_COUNT; i++)
     {
         for(uint8_t j = 0; j < AXIS_COUNT; j++)
             axis_btn[j]->tick();
 
-        axgui[i].set_value(get_axis_input_value(i) + axis_offset[i]);
+        int32_t val = get_axis_input_value(i);
+        axgui[i].set_value(val != INT32_MAX ? val + axis_offset[i]: INT32_MAX);
         axgui[i].set_markexp(active_axis == i ? active_exp : 255);
         axgui[i].redraw();
     }

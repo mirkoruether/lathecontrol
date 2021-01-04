@@ -170,10 +170,11 @@ private:
             lcd.Draw_Char(
                 x_val + i * CHARWIDTH_VALUE + commaoffset, y,
                 get_char(value, DIGITS - i - 1),
-                RED, BLACK, TEXTSIZE_VALUE, 1
+                RED, BLACK, TEXTSIZE_VALUE, 0
             );
         }
-        lcd.Draw_Char(x_signchar, y, value >= 0 ? '+' : '-', RED, BLACK, TEXTSIZE_VALUE, 1);
+        lcd.Draw_Char(x_signchar, y, value >= 0 ? '+' : '-', RED, BLACK, TEXTSIZE_VALUE, 0);
+        lcd.Fill_Rect(x_commachar, y, 2 * TEXTSIZE_VALUE, LCD_CHAR_BASE_HEIGHT * TEXTSIZE_VALUE, BLACK);
         lcd.Fill_Rect(x_commachar, y + 6 * TEXTSIZE_VALUE, TEXTSIZE_VALUE, TEXTSIZE_VALUE, RED);
     }
 
