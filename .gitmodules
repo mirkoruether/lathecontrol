@@ -1,18 +1,18 @@
 [submodule "RotaryEncoder"]
-	path = lib/RotaryEncoder
+	path = v1_arduino_mega/lib/RotaryEncoder
 	url = https://github.com/mathertel/RotaryEncoder.git
 [submodule "LCDWIKI_GUI"]
-	path = lib/LCDWIKI_GUI
+	path = v1_arduino_mega/lib/LCDWIKI_GUI
 	url = https://github.com/lcdwiki/LCDWIKI_gui.git
 [submodule "LCDWIKI_KBV"]
-	path = lib/LCDWIKI_KBV
+	path = v1_arduino_mega/lib/LCDWIKI_KBV
 	url = https://github.com/lcdwiki/LCDWIKI_kbv.git
 [submodule "TouchScreen"]
-	path = lib/TouchScreen
+	path = v1_arduino_mega/lib/TouchScreen
 	url = https://github.com/adafruit/Adafruit_TouchScreen.git
 [submodule "PinChangeInterrupt"]
-	path = lib/PinChangeInterrupt
+	path = v1_arduino_mega/lib/PinChangeInterrupt
 	url = https://github.com/NicoHood/PinChangeInterrupt
 [submodule "OneButton"]
-	path = lib/OneButton
+	path = v1_arduino_mega/lib/OneButton
 	url = https://github.com/mathertel/OneButton
