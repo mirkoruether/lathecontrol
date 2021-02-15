@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -57,232 +57,20 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:LM317_TO-252 U?
-U 1 1 602694DB
-P 1800 6000
-F 0 "U?" H 1800 6242 50  0000 C CNN
-F 1 "LM317_TO-252" H 1800 6151 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 1800 6250 50  0001 C CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810271112_UTC-Unisonic-Tech-LM317AG-TN3-R_C75510.pdf" H 1800 6000 50  0001 C CNN
-F 4 "C75510" H 1800 6000 50  0001 C CNN "LCSC"
-	1    1800 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6026A385
-P 2250 6300
-F 0 "R?" H 2320 6346 50  0000 L CNN
-F 1 "240" H 2320 6255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 6300 50  0001 C CNN
-F 3 "~" H 2250 6300 50  0001 C CNN
-F 4 "C23350" H 2250 6300 50  0001 C CNN "LCSC"
-	1    2250 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6026B90C
-P 2250 6800
-F 0 "R?" H 2320 6846 50  0000 L CNN
-F 1 "82" H 2320 6755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 6800 50  0001 C CNN
-F 3 "~" H 2250 6800 50  0001 C CNN
-F 4 "C23255" H 2250 6800 50  0001 C CNN "LCSC"
-	1    2250 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 6650 2250 6550
-Wire Wire Line
-	2250 6550 1800 6550
-Wire Wire Line
-	1800 6550 1800 6300
-Connection ~ 2250 6550
-Wire Wire Line
-	2250 6550 2250 6450
-Wire Wire Line
-	2100 6000 2250 6000
-Wire Wire Line
-	2250 6000 2250 6150
-$Comp
-L power:GND #PWR?
-U 1 1 6026C043
-P 2250 7000
-F 0 "#PWR?" H 2250 6750 50  0001 C CNN
-F 1 "GND" H 2255 6827 50  0000 C CNN
-F 2 "" H 2250 7000 50  0001 C CNN
-F 3 "" H 2250 7000 50  0001 C CNN
-	1    2250 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 7000 2250 6950
-$Comp
-L Device:C C?
-U 1 1 6026DA3C
-P 1350 6300
-AR Path="/6025D9E2/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/6025E7C0/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265A76/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265B58/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265BB4/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265C25/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/60265C89/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/60265F6D/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/60265FC9/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/6026601C/6026DA3C" Ref="C?"  Part="1" 
-AR Path="/6026DA3C" Ref="C?"  Part="1" 
-F 0 "C?" H 1465 6346 50  0000 L CNN
-F 1 "100n" H 1465 6255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1388 6150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 1350 6300 50  0001 C CNN
-F 4 "C14663" H 1350 6300 50  0001 C CNN "LCSC"
-	1    1350 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 6150 1350 6000
-$Comp
-L power:GND #PWR?
-U 1 1 6026EE14
-P 1350 7000
-F 0 "#PWR?" H 1350 6750 50  0001 C CNN
-F 1 "GND" H 1355 6827 50  0000 C CNN
-F 2 "" H 1350 7000 50  0001 C CNN
-F 3 "" H 1350 7000 50  0001 C CNN
-	1    1350 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 7000 1350 6450
-$Comp
-L power:VCC #PWR?
-U 1 1 6026FCDC
-P 1150 5950
-F 0 "#PWR?" H 1150 5800 50  0001 C CNN
-F 1 "VCC" H 1165 6123 50  0000 C CNN
-F 2 "" H 1150 5950 50  0001 C CNN
-F 3 "" H 1150 5950 50  0001 C CNN
-	1    1150 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 60270D1F
-P 1800 5550
-F 0 "D?" H 1800 5767 50  0000 C CNN
-F 1 "D" H 1800 5676 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 1800 5550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1903051030_MDD-Jiangsu-Yutai-Elec-SM4007PL_C64898.pdf" H 1800 5550 50  0001 C CNN
-F 4 "C64898" H 1800 5550 50  0001 C CNN "LCSC"
-	1    1800 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 6000 1350 5550
-Wire Wire Line
-	1350 5550 1650 5550
-Connection ~ 1350 6000
-Wire Wire Line
-	1350 6000 1500 6000
-Wire Wire Line
-	1950 5550 2250 5550
-Wire Wire Line
-	2250 5550 2250 6000
-Connection ~ 2250 6000
-Wire Wire Line
-	1350 6000 1150 6000
-Wire Wire Line
-	1150 6000 1150 5950
-$Comp
-L power:GND #PWR?
-U 1 1 60276E9E
-P 2650 7000
-F 0 "#PWR?" H 2650 6750 50  0001 C CNN
-F 1 "GND" H 2655 6827 50  0000 C CNN
-F 2 "" H 2650 7000 50  0001 C CNN
-F 3 "" H 2650 7000 50  0001 C CNN
-	1    2650 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60277060
-P 2650 6300
-AR Path="/6025D9E2/60277060" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/6025E7C0/60277060" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265A76/60277060" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265B58/60277060" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265BB4/60277060" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265C25/60277060" Ref="C?"  Part="1" 
-AR Path="/60265C89/60277060" Ref="C?"  Part="1" 
-AR Path="/60265F6D/60277060" Ref="C?"  Part="1" 
-AR Path="/60265FC9/60277060" Ref="C?"  Part="1" 
-AR Path="/6026601C/60277060" Ref="C?"  Part="1" 
-AR Path="/60277060" Ref="C?"  Part="1" 
-F 0 "C?" H 2765 6346 50  0000 L CNN
-F 1 "2u2" H 2765 6255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 6150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL10A225KO8NNNC_C23630.pdf" H 2650 6300 50  0001 C CNN
-F 4 "C23630" H 2650 6300 50  0001 C CNN "LCSC"
-	1    2650 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 6000 2650 6000
-Wire Wire Line
-	2650 6000 2650 6150
-Wire Wire Line
-	2650 6450 2650 7000
-$Comp
-L power:+1V8 #PWR?
-U 1 1 6027A548
-P 2650 5950
-F 0 "#PWR?" H 2650 5800 50  0001 C CNN
-F 1 "+1V8" H 2665 6123 50  0000 C CNN
-F 2 "" H 2650 5950 50  0001 C CNN
-F 3 "" H 2650 5950 50  0001 C CNN
-	1    2650 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 5950 2650 6000
-Connection ~ 2650 6000
-Wire Notes Line
-	1000 5250 3000 5250
-Wire Notes Line
-	3000 5250 3000 7500
-Wire Notes Line
-	3000 7500 1000 7500
-Wire Notes Line
-	1000 7500 1000 5250
-Text Notes 1050 7450 0    50   ~ 0
-Measuring stick voltage supply (1.7 V)
-Text Label 1850 6550 0    50   ~ 0
-VADJ_1V8
-$Comp
 L power:GND #PWR?
 U 1 1 6028B775
-P 5550 5250
-F 0 "#PWR?" H 5550 5000 50  0001 C CNN
-F 1 "GND" H 5555 5077 50  0000 C CNN
-F 2 "" H 5550 5250 50  0001 C CNN
-F 3 "" H 5550 5250 50  0001 C CNN
-	1    5550 5250
+P 5550 5200
+F 0 "#PWR?" H 5550 4950 50  0001 C CNN
+F 1 "GND" H 5555 5027 50  0000 C CNN
+F 2 "" H 5550 5200 50  0001 C CNN
+F 3 "" H 5550 5200 50  0001 C CNN
+	1    5550 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 5250 5550 5200
-Wire Wire Line
-	5550 5200 5600 5200
 Wire Wire Line
 	5700 5200 5700 5150
 Wire Wire Line
-	5550 5200 5500 5200
-Wire Wire Line
 	5400 5200 5400 5150
-Connection ~ 5550 5200
 Wire Wire Line
 	5500 5150 5500 5200
 Connection ~ 5500 5200
@@ -333,23 +121,23 @@ Connection ~ 5700 2100
 $Comp
 L power:+3.3V #PWR?
 U 1 1 602914E4
-P 5550 1100
-F 0 "#PWR?" H 5550 950 50  0001 C CNN
-F 1 "+3.3V" H 5565 1273 50  0000 C CNN
-F 2 "" H 5550 1100 50  0001 C CNN
-F 3 "" H 5550 1100 50  0001 C CNN
-	1    5550 1100
+P 5550 1150
+F 0 "#PWR?" H 5550 1000 50  0001 C CNN
+F 1 "+3.3V" H 5565 1323 50  0000 C CNN
+F 2 "" H 5550 1150 50  0001 C CNN
+F 3 "" H 5550 1150 50  0001 C CNN
+	1    5550 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60292021
-P 5550 1600
-F 0 "#PWR?" H 5550 1350 50  0001 C CNN
-F 1 "GND" H 5555 1427 50  0000 C CNN
-F 2 "" H 5550 1600 50  0001 C CNN
-F 3 "" H 5550 1600 50  0001 C CNN
-	1    5550 1600
+P 5550 1550
+F 0 "#PWR?" H 5550 1300 50  0001 C CNN
+F 1 "GND" H 5555 1377 50  0000 C CNN
+F 2 "" H 5550 1550 50  0001 C CNN
+F 3 "" H 5550 1550 50  0001 C CNN
+	1    5550 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -474,12 +262,10 @@ Wire Wire Line
 Wire Wire Line
 	6450 1550 6450 1500
 Wire Wire Line
-	5550 1500 5550 1600
-Wire Wire Line
 	5100 1500 5100 1550
 Connection ~ 5100 1550
 Wire Wire Line
-	5100 1550 6000 1550
+	5100 1550 5550 1550
 Wire Wire Line
 	6000 1500 6000 1550
 Connection ~ 6000 1550
@@ -492,8 +278,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 1150 6450 1200
 Wire Wire Line
-	5550 1200 5550 1100
-Wire Wire Line
 	6000 1200 6000 1150
 Connection ~ 6000 1150
 Wire Wire Line
@@ -502,7 +286,7 @@ Wire Wire Line
 	5100 1200 5100 1150
 Connection ~ 5100 1150
 Wire Wire Line
-	5100 1150 6000 1150
+	5100 1150 5550 1150
 $Comp
 L Device:Crystal Y?
 U 1 1 602A5242
@@ -538,6 +322,95 @@ F 4 "C22397" H 3550 3500 50  0001 C CNN "LCSC"
 	1    3550 3500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3550 3350 3550 3250
+Wire Wire Line
+	3550 3250 3650 3250
+Wire Wire Line
+	3950 3250 4050 3250
+Wire Wire Line
+	4050 3250 4050 2850
+Connection ~ 4050 3250
+Wire Wire Line
+	4900 2750 3550 2750
+Wire Wire Line
+	3550 2750 3550 3250
+Connection ~ 3550 3250
+$Comp
+L power:GND #PWR?
+U 1 1 602ADD83
+P 3550 3650
+F 0 "#PWR?" H 3550 3400 50  0001 C CNN
+F 1 "GND" H 3555 3477 50  0000 C CNN
+F 2 "" H 3550 3650 50  0001 C CNN
+F 3 "" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	1    0    0    -1  
+$EndComp
+Text Label 4550 2750 0    50   ~ 0
+OSC_IN
+Text Label 4550 2850 0    50   ~ 0
+OSC_OUT
+Wire Wire Line
+	4050 2850 4900 2850
+Text GLabel 6200 4750 2    50   Input ~ 0
+SWDIO
+Text GLabel 6200 4850 2    50   Input ~ 0
+SWCLK
+Text GLabel 7300 4650 2    50   Input ~ 0
+USB_D+
+Text GLabel 7300 4550 2    50   Input ~ 0
+USB_D-
+Wire Wire Line
+	7300 4550 6200 4550
+Wire Wire Line
+	7300 4650 7150 4650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 602EBCE5
+P 7150 4150
+F 0 "#PWR?" H 7150 4000 50  0001 C CNN
+F 1 "+3.3V" H 7165 4323 50  0000 C CNN
+F 2 "" H 7150 4150 50  0001 C CNN
+F 3 "" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 602EC5C6
+P 7150 4300
+F 0 "R?" H 7220 4346 50  0000 L CNN
+F 1 "1k5" H 7220 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 4300 50  0001 C CNN
+F 3 "~" H 7150 4300 50  0001 C CNN
+F 4 "C22843" H 7150 4300 50  0001 C CNN "LCSC"
+	1    7150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4450 7150 4650
+Connection ~ 7150 4650
+Wire Wire Line
+	7150 4650 6200 4650
+Wire Wire Line
+	5500 5200 5550 5200
+Connection ~ 5550 5200
+Wire Wire Line
+	5550 5200 5600 5200
+$Comp
+L power:GND #PWR?
+U 1 1 602AE06E
+P 4050 3650
+F 0 "#PWR?" H 4050 3400 50  0001 C CNN
+F 1 "GND" H 4055 3477 50  0000 C CNN
+F 2 "" H 4050 3650 50  0001 C CNN
+F 3 "" H 4050 3650 50  0001 C CNN
+	1    4050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3250 4050 3350
 $Comp
 L Device:C C?
 U 1 1 602A8A25
@@ -562,186 +435,25 @@ F 4 "C22397" H 4050 3500 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 3350 3550 3250
+	5550 1500 5550 1550
+Connection ~ 5550 1550
 Wire Wire Line
-	3550 3250 3650 3250
+	5550 1550 6000 1550
 Wire Wire Line
-	3950 3250 4050 3250
+	5550 1200 5550 1150
+Connection ~ 5550 1150
 Wire Wire Line
-	4050 3250 4050 3350
-Wire Wire Line
-	4050 3250 4050 2850
-Connection ~ 4050 3250
-Wire Wire Line
-	4900 2750 3550 2750
-Wire Wire Line
-	3550 2750 3550 3250
-Connection ~ 3550 3250
-$Comp
-L power:GND #PWR?
-U 1 1 602ADD83
-P 3550 3700
-F 0 "#PWR?" H 3550 3450 50  0001 C CNN
-F 1 "GND" H 3555 3527 50  0000 C CNN
-F 2 "" H 3550 3700 50  0001 C CNN
-F 3 "" H 3550 3700 50  0001 C CNN
-	1    3550 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 602AE06E
-P 4050 3700
-F 0 "#PWR?" H 4050 3450 50  0001 C CNN
-F 1 "GND" H 4055 3527 50  0000 C CNN
-F 2 "" H 4050 3700 50  0001 C CNN
-F 3 "" H 4050 3700 50  0001 C CNN
-	1    4050 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 3650 3550 3700
-Wire Wire Line
-	4050 3650 4050 3700
-Text Label 4550 2750 0    50   ~ 0
-OSC_IN
-Text Label 4550 2850 0    50   ~ 0
-OSC_OUT
-Wire Wire Line
-	4050 2850 4900 2850
-$Comp
-L Regulator_Linear:AMS1117-3.3 U?
-U 1 1 602C56FD
-P 4400 6000
-F 0 "U?" H 4400 6242 50  0000 C CNN
-F 1 "AMS1117-3.3" H 4400 6151 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4400 6200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811201117_Advanced-Monolithic-Systems-AMS-AMS1117-3-3_C6186.pdf" H 4500 5750 50  0001 C CNN
-F 4 "C6186" H 4400 6000 50  0001 C CNN "LCSC"
-	1    4400 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 602C957F
-P 3900 6300
-AR Path="/6025D9E2/602C957F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/6025E7C0/602C957F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265A76/602C957F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265B58/602C957F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265BB4/602C957F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265C25/602C957F" Ref="C?"  Part="1" 
-AR Path="/60265C89/602C957F" Ref="C?"  Part="1" 
-AR Path="/60265F6D/602C957F" Ref="C?"  Part="1" 
-AR Path="/60265FC9/602C957F" Ref="C?"  Part="1" 
-AR Path="/6026601C/602C957F" Ref="C?"  Part="1" 
-AR Path="/602C957F" Ref="C?"  Part="1" 
-F 0 "C?" H 4015 6346 50  0000 L CNN
-F 1 "100n" H 4015 6255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 6150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 3900 6300 50  0001 C CNN
-F 4 "C14663" H 3900 6300 50  0001 C CNN "LCSC"
-	1    3900 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 6150 3900 6000
-Wire Wire Line
-	3900 6000 4100 6000
-$Comp
-L power:GND #PWR?
-U 1 1 602CBE2D
-P 3900 6650
-F 0 "#PWR?" H 3900 6400 50  0001 C CNN
-F 1 "GND" H 3905 6477 50  0000 C CNN
-F 2 "" H 3900 6650 50  0001 C CNN
-F 3 "" H 3900 6650 50  0001 C CNN
-	1    3900 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 602CC207
-P 4400 6650
-F 0 "#PWR?" H 4400 6400 50  0001 C CNN
-F 1 "GND" H 4405 6477 50  0000 C CNN
-F 2 "" H 4400 6650 50  0001 C CNN
-F 3 "" H 4400 6650 50  0001 C CNN
-	1    4400 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 602CC4D1
-P 4900 6650
-F 0 "#PWR?" H 4900 6400 50  0001 C CNN
-F 1 "GND" H 4905 6477 50  0000 C CNN
-F 2 "" H 4900 6650 50  0001 C CNN
-F 3 "" H 4900 6650 50  0001 C CNN
-	1    4900 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 602CD17F
-P 4900 6350
-AR Path="/6025D9E2/602CD17F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/6025E7C0/602CD17F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265A76/602CD17F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265B58/602CD17F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265BB4/602CD17F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265C25/602CD17F" Ref="C?"  Part="1" 
-AR Path="/60265C89/602CD17F" Ref="C?"  Part="1" 
-AR Path="/60265F6D/602CD17F" Ref="C?"  Part="1" 
-AR Path="/60265FC9/602CD17F" Ref="C?"  Part="1" 
-AR Path="/6026601C/602CD17F" Ref="C?"  Part="1" 
-AR Path="/602CD17F" Ref="C?"  Part="1" 
-F 0 "C?" H 5015 6396 50  0000 L CNN
-F 1 "22u" H 5015 6305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4938 6200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.pdf" H 4900 6350 50  0001 C CNN
-F 4 "C45783" H 4900 6350 50  0001 C CNN "LCSC"
-	1    4900 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 6000 4900 6000
-Wire Wire Line
-	4900 6000 4900 6200
-Wire Wire Line
-	3900 6450 3900 6650
-Wire Wire Line
-	4400 6300 4400 6650
-Wire Wire Line
-	4900 6500 4900 6650
-Text Notes 5000 6000 0    50   ~ 0
-Todo: Low pass filter?
-$Comp
-L power:VCC #PWR?
-U 1 1 602D8DFE
-P 3900 5950
-F 0 "#PWR?" H 3900 5800 50  0001 C CNN
-F 1 "VCC" H 3915 6123 50  0000 C CNN
-F 2 "" H 3900 5950 50  0001 C CNN
-F 3 "" H 3900 5950 50  0001 C CNN
-	1    3900 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 5950 3900 6000
-Connection ~ 3900 6000
-$Comp
-L power:+3.3V #PWR?
-U 1 1 602DC50A
-P 4900 5950
-F 0 "#PWR?" H 4900 5800 50  0001 C CNN
-F 1 "+3.3V" H 4915 6123 50  0000 C CNN
-F 2 "" H 4900 5950 50  0001 C CNN
-F 3 "" H 4900 5950 50  0001 C CNN
-	1    4900 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 5950 4900 6000
-Connection ~ 4900 6000
+	5550 1150 6000 1150
+Text GLabel 4900 2350 0    50   Input ~ 0
+NRST
+Text GLabel 4900 3750 0    50   Input ~ 0
+TRACE_SWO
+Text GLabel 4900 2550 0    50   Input ~ 0
+BOOT0
+$Sheet
+S 1250 5800 950  1300
+U 60278C87
+F0 "Power" 50
+F1 "power.sch" 50
+$EndSheet
 $EndSCHEMATC
