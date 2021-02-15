@@ -343,7 +343,7 @@ Wire Notes Line
 Text Notes 8900 2950 0    50   ~ 0
 5V to 3.3V LDO
 $Comp
-L MP2451DT-LF-P:MP2451DT-LF-P U?
+L lathecontrol_stm32-rescue:MP2451DT-LF-P-MP2451DT-LF-P U?
 U 1 1 602ADA2D
 P 1600 2050
 F 0 "U?" H 2400 2437 60  0000 C CNN

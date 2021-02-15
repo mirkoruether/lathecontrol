@@ -1,2 +1,5 @@
 stmcube
+stmcube_stm32f103RBT6
 *.sch-bak
+*-rescue.lib
+*-rescue.dcm

@@ -121,7 +121,7 @@ IN_Dat
 Text Label 2750 3100 0    50   ~ 0
 IN_Clk
 $Comp
-L Connector:USB_A J?
+L lathecontrol_stm32-rescue:USB_A-Connector J?
 U 1 1 60261659
 P 2350 3000
 AR Path="/6025D9E2/60261659" Ref="J?"  Part="1" 
@@ -134,6 +134,7 @@ AR Path="/60265C89/60261659" Ref="J?"  Part="1"
 AR Path="/60265F6D/60261659" Ref="J?"  Part="1" 
 AR Path="/60265FC9/60261659" Ref="J?"  Part="1" 
 AR Path="/6026601C/60261659" Ref="J?"  Part="1" 
+AR Path="/60261659" Ref="J?"  Part="1" 
 F 0 "J?" H 2407 3467 50  0000 C CNN
 F 1 "USB_A" H 2407 3376 50  0000 C CNN
 F 2 "Connector_USB:USB_A_Wuerth_614004134726_Horizontal" H 2500 2950 50  0001 C CNN
