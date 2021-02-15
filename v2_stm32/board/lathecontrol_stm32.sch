@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -14,104 +14,104 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1250 1050 1150 700 
+S 750  750  1150 700 
 U 60265C89
 F0 "Measurestick Input 1" 50
 F1 "measurestick_single.sch" 50
-F2 "DAT" I R 2400 1250 50 
-F3 "CLK" I R 2400 1550 50 
+F2 "DAT" O R 1900 950 50 
+F3 "CLK" O R 1900 1250 50 
 $EndSheet
 $Sheet
-S 1250 2050 1150 700 
+S 750  1750 1150 700 
 U 60265F6D
 F0 "Measurestick Input 2" 50
 F1 "measurestick_single.sch" 50
-F2 "DAT" I R 2400 2250 50 
-F3 "CLK" I R 2400 2550 50 
+F2 "DAT" O R 1900 1950 50 
+F3 "CLK" O R 1900 2250 50 
 $EndSheet
 $Sheet
-S 1250 3050 1150 700 
+S 750  2750 1150 700 
 U 60265FC9
 F0 "Measurestick Input 3" 50
 F1 "measurestick_single.sch" 50
-F2 "DAT" I R 2400 3250 50 
-F3 "CLK" I R 2400 3550 50 
+F2 "DAT" O R 1900 2950 50 
+F3 "CLK" O R 1900 3250 50 
 $EndSheet
 $Sheet
-S 1250 4050 1150 700 
+S 750  3750 1150 700 
 U 6026601C
 F0 "Measurestick Input 4" 50
 F1 "measurestick_single.sch" 50
-F2 "DAT" I R 2400 4250 50 
-F3 "CLK" I R 2400 4550 50 
+F2 "DAT" O R 1900 3950 50 
+F3 "CLK" O R 1900 4250 50 
 $EndSheet
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 6028B775
-P 5600 5800
-F 0 "#PWR?" H 5600 5550 50  0001 C CNN
-F 1 "GND" H 5605 5627 50  0000 C CNN
-F 2 "" H 5600 5800 50  0001 C CNN
-F 3 "" H 5600 5800 50  0001 C CNN
-	1    5600 5800
+P 4800 5550
+F 0 "#PWR0101" H 4800 5300 50  0001 C CNN
+F 1 "GND" H 4805 5377 50  0000 C CNN
+F 2 "" H 4800 5550 50  0001 C CNN
+F 3 "" H 4800 5550 50  0001 C CNN
+	1    4800 5550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0102
 U 1 1 6028E24A
-P 5650 2100
-F 0 "#PWR?" H 5650 1950 50  0001 C CNN
-F 1 "+3.3V" H 5665 2273 50  0000 C CNN
-F 2 "" H 5650 2100 50  0001 C CNN
-F 3 "" H 5650 2100 50  0001 C CNN
-	1    5650 2100
+P 4850 1850
+F 0 "#PWR0102" H 4850 1700 50  0001 C CNN
+F 1 "+3.3V" H 4865 2023 50  0000 C CNN
+F 2 "" H 4850 1850 50  0001 C CNN
+F 3 "" H 4850 1850 50  0001 C CNN
+	1    4850 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 2100 5600 2150
+	4800 1850 4800 1900
 Wire Wire Line
-	5500 2100 5500 2150
+	4700 1850 4700 1900
 Wire Wire Line
-	5500 2100 5400 2100
+	4700 1850 4600 1850
 Wire Wire Line
-	5400 2100 5400 2150
-Connection ~ 5500 2100
+	4600 1850 4600 1900
+Connection ~ 4700 1850
 Wire Wire Line
-	5600 2100 5650 2100
+	4800 1850 4850 1850
 Wire Wire Line
-	5700 2100 5700 2150
-Connection ~ 5600 2100
+	4900 1850 4900 1900
+Connection ~ 4800 1850
 Wire Wire Line
-	5700 2100 5800 2100
+	4900 1850 5000 1850
 Wire Wire Line
-	5800 2100 5800 2150
-Connection ~ 5700 2100
+	5000 1850 5000 1900
+Connection ~ 4900 1850
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0103
 U 1 1 602914E4
-P 5650 1100
-F 0 "#PWR?" H 5650 950 50  0001 C CNN
-F 1 "+3.3V" H 5665 1273 50  0000 C CNN
-F 2 "" H 5650 1100 50  0001 C CNN
-F 3 "" H 5650 1100 50  0001 C CNN
-	1    5650 1100
+P 4850 850
+F 0 "#PWR0103" H 4850 700 50  0001 C CNN
+F 1 "+3.3V" H 4865 1023 50  0000 C CNN
+F 2 "" H 4850 850 50  0001 C CNN
+F 3 "" H 4850 850 50  0001 C CNN
+	1    4850 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 60292021
-P 5650 1500
-F 0 "#PWR?" H 5650 1250 50  0001 C CNN
-F 1 "GND" H 5655 1327 50  0000 C CNN
-F 2 "" H 5650 1500 50  0001 C CNN
-F 3 "" H 5650 1500 50  0001 C CNN
-	1    5650 1500
+P 4850 1250
+F 0 "#PWR0104" H 4850 1000 50  0001 C CNN
+F 1 "GND" H 4855 1077 50  0000 C CNN
+F 2 "" H 4850 1250 50  0001 C CNN
+F 3 "" H 4850 1250 50  0001 C CNN
+	1    4850 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 602977E9
-P 5400 1300
+P 4600 1050
 AR Path="/6025D9E2/602977E9" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/602977E9" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/602977E9" Ref="C?"  Part="1" 
@@ -122,19 +122,19 @@ AR Path="/60265C89/602977E9" Ref="C?"  Part="1"
 AR Path="/60265F6D/602977E9" Ref="C?"  Part="1" 
 AR Path="/60265FC9/602977E9" Ref="C?"  Part="1" 
 AR Path="/6026601C/602977E9" Ref="C?"  Part="1" 
-AR Path="/602977E9" Ref="C?"  Part="1" 
-F 0 "C?" H 5515 1346 50  0000 L CNN
-F 1 "100n" H 5515 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5400 1300 50  0001 C CNN
-F 4 "C14663" H 5400 1300 50  0001 C CNN "LCSC"
-	1    5400 1300
+AR Path="/602977E9" Ref="C3"  Part="1" 
+F 0 "C3" H 4715 1096 50  0000 L CNN
+F 1 "100n" H 4715 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4638 900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4600 1050 50  0001 C CNN
+F 4 "C14663" H 4600 1050 50  0001 C CNN "LCSC"
+	1    4600 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 6029BBC1
-P 4950 1300
+P 4150 1050
 AR Path="/6025D9E2/6029BBC1" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/6029BBC1" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/6029BBC1" Ref="C?"  Part="1" 
@@ -145,19 +145,19 @@ AR Path="/60265C89/6029BBC1" Ref="C?"  Part="1"
 AR Path="/60265F6D/6029BBC1" Ref="C?"  Part="1" 
 AR Path="/60265FC9/6029BBC1" Ref="C?"  Part="1" 
 AR Path="/6026601C/6029BBC1" Ref="C?"  Part="1" 
-AR Path="/6029BBC1" Ref="C?"  Part="1" 
-F 0 "C?" H 5065 1346 50  0000 L CNN
-F 1 "100n" H 5065 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4988 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4950 1300 50  0001 C CNN
-F 4 "C14663" H 4950 1300 50  0001 C CNN "LCSC"
-	1    4950 1300
+AR Path="/6029BBC1" Ref="C2"  Part="1" 
+F 0 "C2" H 4265 1096 50  0000 L CNN
+F 1 "100n" H 4265 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4150 1050 50  0001 C CNN
+F 4 "C14663" H 4150 1050 50  0001 C CNN "LCSC"
+	1    4150 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 6029BFB8
-P 5850 1300
+P 5050 1050
 AR Path="/6025D9E2/6029BFB8" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/6029BFB8" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/6029BFB8" Ref="C?"  Part="1" 
@@ -168,19 +168,19 @@ AR Path="/60265C89/6029BFB8" Ref="C?"  Part="1"
 AR Path="/60265F6D/6029BFB8" Ref="C?"  Part="1" 
 AR Path="/60265FC9/6029BFB8" Ref="C?"  Part="1" 
 AR Path="/6026601C/6029BFB8" Ref="C?"  Part="1" 
-AR Path="/6029BFB8" Ref="C?"  Part="1" 
-F 0 "C?" H 5965 1346 50  0000 L CNN
-F 1 "100n" H 5965 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5850 1300 50  0001 C CNN
-F 4 "C14663" H 5850 1300 50  0001 C CNN "LCSC"
-	1    5850 1300
+AR Path="/6029BFB8" Ref="C4"  Part="1" 
+F 0 "C4" H 5165 1096 50  0000 L CNN
+F 1 "100n" H 5165 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5050 1050 50  0001 C CNN
+F 4 "C14663" H 5050 1050 50  0001 C CNN "LCSC"
+	1    5050 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 6029C42F
-P 6300 1300
+P 5500 1050
 AR Path="/6025D9E2/6029C42F" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/6029C42F" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/6029C42F" Ref="C?"  Part="1" 
@@ -191,19 +191,19 @@ AR Path="/60265C89/6029C42F" Ref="C?"  Part="1"
 AR Path="/60265F6D/6029C42F" Ref="C?"  Part="1" 
 AR Path="/60265FC9/6029C42F" Ref="C?"  Part="1" 
 AR Path="/6026601C/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6029C42F" Ref="C?"  Part="1" 
-F 0 "C?" H 6415 1346 50  0000 L CNN
-F 1 "100n" H 6415 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6338 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6300 1300 50  0001 C CNN
-F 4 "C14663" H 6300 1300 50  0001 C CNN "LCSC"
-	1    6300 1300
+AR Path="/6029C42F" Ref="C5"  Part="1" 
+F 0 "C5" H 5615 1096 50  0000 L CNN
+F 1 "100n" H 5615 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5500 1050 50  0001 C CNN
+F 4 "C14663" H 5500 1050 50  0001 C CNN "LCSC"
+	1    5500 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 6029DE54
-P 4500 1300
+P 3700 1050
 AR Path="/6025D9E2/6029DE54" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/6029DE54" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/6029DE54" Ref="C?"  Part="1" 
@@ -214,63 +214,63 @@ AR Path="/60265C89/6029DE54" Ref="C?"  Part="1"
 AR Path="/60265F6D/6029DE54" Ref="C?"  Part="1" 
 AR Path="/60265FC9/6029DE54" Ref="C?"  Part="1" 
 AR Path="/6026601C/6029DE54" Ref="C?"  Part="1" 
-AR Path="/6029DE54" Ref="C?"  Part="1" 
-F 0 "C?" H 4615 1346 50  0000 L CNN
-F 1 "100n" H 4615 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4500 1300 50  0001 C CNN
-F 4 "C14663" H 4500 1300 50  0001 C CNN "LCSC"
-	1    4500 1300
+AR Path="/6029DE54" Ref="C1"  Part="1" 
+F 0 "C1" H 3815 1096 50  0000 L CNN
+F 1 "100n" H 3815 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 3700 1050 50  0001 C CNN
+F 4 "C14663" H 3700 1050 50  0001 C CNN "LCSC"
+	1    3700 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 1450 4500 1500
+	3700 1200 3700 1250
 Wire Wire Line
-	4500 1500 4950 1500
+	3700 1250 4150 1250
 Wire Wire Line
-	6300 1500 6300 1450
+	5500 1250 5500 1200
 Wire Wire Line
-	4950 1450 4950 1500
-Connection ~ 4950 1500
+	4150 1200 4150 1250
+Connection ~ 4150 1250
 Wire Wire Line
-	4950 1500 5400 1500
+	4150 1250 4600 1250
 Wire Wire Line
-	5850 1450 5850 1500
-Connection ~ 5850 1500
+	5050 1200 5050 1250
+Connection ~ 5050 1250
 Wire Wire Line
-	5850 1500 6300 1500
+	5050 1250 5500 1250
 Wire Wire Line
-	4500 1150 4500 1100
+	3700 900  3700 850 
 Wire Wire Line
-	4500 1100 4950 1100
+	3700 850  4150 850 
 Wire Wire Line
-	6300 1100 6300 1150
+	5500 850  5500 900 
 Wire Wire Line
-	5850 1150 5850 1100
-Connection ~ 5850 1100
+	5050 900  5050 850 
+Connection ~ 5050 850 
 Wire Wire Line
-	5850 1100 6300 1100
+	5050 850  5500 850 
 Wire Wire Line
-	4950 1150 4950 1100
-Connection ~ 4950 1100
+	4150 900  4150 850 
+Connection ~ 4150 850 
 Wire Wire Line
-	4950 1100 5400 1100
+	4150 850  4600 850 
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 602A5242
-P 3800 4150
-F 0 "Y?" H 3800 4418 50  0000 C CNN
-F 1 "8MHz" H 3800 4327 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 3800 4150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1809192319_Yangxing-Tech-X50328MSB2GI_C115962.pdf" H 3800 4150 50  0001 C CNN
-F 4 "C115962" H 3800 4150 50  0001 C CNN "LCSC"
-	1    3800 4150
+P 3000 3750
+F 0 "Y1" H 3000 4018 50  0000 C CNN
+F 1 "8MHz" H 3000 3927 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 3000 3750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809192319_Yangxing-Tech-X50328MSB2GI_C115962.pdf" H 3000 3750 50  0001 C CNN
+F 4 "C115962" H 3000 3750 50  0001 C CNN "LCSC"
+	1    3000 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 602A6EB0
-P 3550 4400
+P 2750 4000
 AR Path="/6025D9E2/602A6EB0" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/602A6EB0" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/602A6EB0" Ref="C?"  Part="1" 
@@ -281,103 +281,103 @@ AR Path="/60265C89/602A6EB0" Ref="C?"  Part="1"
 AR Path="/60265F6D/602A6EB0" Ref="C?"  Part="1" 
 AR Path="/60265FC9/602A6EB0" Ref="C?"  Part="1" 
 AR Path="/6026601C/602A6EB0" Ref="C?"  Part="1" 
-AR Path="/602A6EB0" Ref="C?"  Part="1" 
-F 0 "C?" H 3665 4446 50  0000 L CNN
-F 1 "30p" H 3665 4355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3588 4250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1809300925_Samsung-Electro-Mechanics-CL10C300JB8NNNC_C22397.pdf" H 3550 4400 50  0001 C CNN
-F 4 "C22397" H 3550 4400 50  0001 C CNN "LCSC"
-	1    3550 4400
+AR Path="/602A6EB0" Ref="C7"  Part="1" 
+F 0 "C7" H 2865 4046 50  0000 L CNN
+F 1 "30p" H 2865 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2788 3850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809300925_Samsung-Electro-Mechanics-CL10C300JB8NNNC_C22397.pdf" H 2750 4000 50  0001 C CNN
+F 4 "C22397" H 2750 4000 50  0001 C CNN "LCSC"
+	1    2750 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 4250 3550 4150
+	2750 3850 2750 3750
 Wire Wire Line
-	3550 4150 3650 4150
+	2750 3750 2850 3750
 Wire Wire Line
-	3950 4150 4050 4150
+	3150 3750 3250 3750
 Wire Wire Line
-	4050 4150 4050 3750
-Connection ~ 4050 4150
+	3250 3750 3250 3500
+Connection ~ 3250 3750
 Wire Wire Line
-	4900 3650 3550 3650
+	4100 3400 2750 3400
 Wire Wire Line
-	3550 3650 3550 4150
-Connection ~ 3550 4150
+	2750 3400 2750 3750
+Connection ~ 2750 3750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 602ADD83
-P 3550 4550
-F 0 "#PWR?" H 3550 4300 50  0001 C CNN
-F 1 "GND" H 3555 4377 50  0000 C CNN
-F 2 "" H 3550 4550 50  0001 C CNN
-F 3 "" H 3550 4550 50  0001 C CNN
-	1    3550 4550
+P 2750 4150
+F 0 "#PWR0105" H 2750 3900 50  0001 C CNN
+F 1 "GND" H 2755 3977 50  0000 C CNN
+F 2 "" H 2750 4150 50  0001 C CNN
+F 3 "" H 2750 4150 50  0001 C CNN
+	1    2750 4150
 	1    0    0    -1  
 $EndComp
-Text Label 4550 3650 0    50   ~ 0
+Text Label 3750 3400 0    50   ~ 0
 OSC_IN
-Text Label 4550 3750 0    50   ~ 0
+Text Label 3750 3500 0    50   ~ 0
 OSC_OUT
 Wire Wire Line
-	4050 3750 4900 3750
-Text GLabel 6300 3650 2    50   Input ~ 0
+	3250 3500 4100 3500
+Text GLabel 5500 3400 2    50   Input ~ 0
 SWDIO
-Text GLabel 6300 3750 2    50   Input ~ 0
+Text GLabel 5500 3500 2    50   Input ~ 0
 SWCLK
-Text GLabel 7400 3550 2    50   Input ~ 0
+Text GLabel 6350 3300 2    50   Input ~ 0
 USB_D+
-Text GLabel 7400 3450 2    50   Input ~ 0
+Text GLabel 6350 3200 2    50   Input ~ 0
 USB_D-
 Wire Wire Line
-	7400 3450 6300 3450
+	6350 3200 5500 3200
 Wire Wire Line
-	7400 3550 7250 3550
+	6350 3300 6200 3300
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0106
 U 1 1 602EBCE5
-P 7250 3050
-F 0 "#PWR?" H 7250 2900 50  0001 C CNN
-F 1 "+3.3V" H 7265 3223 50  0000 C CNN
-F 2 "" H 7250 3050 50  0001 C CNN
-F 3 "" H 7250 3050 50  0001 C CNN
-	1    7250 3050
+P 6200 2800
+F 0 "#PWR0106" H 6200 2650 50  0001 C CNN
+F 1 "+3.3V" H 6215 2973 50  0000 C CNN
+F 2 "" H 6200 2800 50  0001 C CNN
+F 3 "" H 6200 2800 50  0001 C CNN
+	1    6200 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 602EC5C6
-P 7250 3200
-F 0 "R?" H 7320 3246 50  0000 L CNN
-F 1 "1k5" H 7320 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7180 3200 50  0001 C CNN
-F 3 "~" H 7250 3200 50  0001 C CNN
-F 4 "C22843" H 7250 3200 50  0001 C CNN "LCSC"
-	1    7250 3200
+P 6200 2950
+F 0 "R1" H 6270 2996 50  0000 L CNN
+F 1 "1k5" H 6270 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6130 2950 50  0001 C CNN
+F 3 "~" H 6200 2950 50  0001 C CNN
+F 4 "C22843" H 6200 2950 50  0001 C CNN "LCSC"
+	1    6200 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 3350 7250 3550
-Connection ~ 7250 3550
+	6200 3100 6200 3300
+Connection ~ 6200 3300
 Wire Wire Line
-	7250 3550 6300 3550
+	6200 3300 5500 3300
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 602AE06E
-P 4050 4550
-F 0 "#PWR?" H 4050 4300 50  0001 C CNN
-F 1 "GND" H 4055 4377 50  0000 C CNN
-F 2 "" H 4050 4550 50  0001 C CNN
-F 3 "" H 4050 4550 50  0001 C CNN
-	1    4050 4550
+P 3250 4150
+F 0 "#PWR0107" H 3250 3900 50  0001 C CNN
+F 1 "GND" H 3255 3977 50  0000 C CNN
+F 2 "" H 3250 4150 50  0001 C CNN
+F 3 "" H 3250 4150 50  0001 C CNN
+	1    3250 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 4150 4050 4250
+	3250 3750 3250 3850
 $Comp
 L Device:C C?
 U 1 1 602A8A25
-P 4050 4400
+P 3250 4000
 AR Path="/6025D9E2/602A8A25" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/602A8A25" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/602A8A25" Ref="C?"  Part="1" 
@@ -388,83 +388,83 @@ AR Path="/60265C89/602A8A25" Ref="C?"  Part="1"
 AR Path="/60265F6D/602A8A25" Ref="C?"  Part="1" 
 AR Path="/60265FC9/602A8A25" Ref="C?"  Part="1" 
 AR Path="/6026601C/602A8A25" Ref="C?"  Part="1" 
-AR Path="/602A8A25" Ref="C?"  Part="1" 
-F 0 "C?" H 4165 4446 50  0000 L CNN
-F 1 "30p" H 4165 4355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4088 4250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1809300925_Samsung-Electro-Mechanics-CL10C300JB8NNNC_C22397.pdf" H 4050 4400 50  0001 C CNN
-F 4 "C22397" H 4050 4400 50  0001 C CNN "LCSC"
-	1    4050 4400
+AR Path="/602A8A25" Ref="C8"  Part="1" 
+F 0 "C8" H 3365 4046 50  0000 L CNN
+F 1 "30p" H 3365 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 3850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809300925_Samsung-Electro-Mechanics-CL10C300JB8NNNC_C22397.pdf" H 3250 4000 50  0001 C CNN
+F 4 "C22397" H 3250 4000 50  0001 C CNN "LCSC"
+	1    3250 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 1450 5400 1500
-Connection ~ 5400 1500
+	4600 1200 4600 1250
+Connection ~ 4600 1250
 Wire Wire Line
-	5400 1500 5650 1500
+	4600 1250 4850 1250
 Wire Wire Line
-	5400 1150 5400 1100
-Connection ~ 5400 1100
+	4600 900  4600 850 
+Connection ~ 4600 850 
 Wire Wire Line
-	5400 1100 5650 1100
-Text GLabel 4900 2350 0    50   Input ~ 0
+	4600 850  4850 850 
+Text GLabel 4100 2100 0    50   Input ~ 0
 NRST
-Text GLabel 6550 4250 2    50   Input ~ 0
+Text GLabel 5750 4000 2    50   Input ~ 0
 TRACE_SWO
-Text GLabel 4900 2550 0    50   Input ~ 0
+Text GLabel 4100 2300 0    50   Input ~ 0
 BOOT0
 $Sheet
-S 1250 5800 950  1300
+S 750  5750 1150 700 
 U 60278C87
 F0 "Power" 50
 F1 "power.sch" 50
 $EndSheet
 $Comp
-L MCU_ST_STM32F1:STM32F103RBTx U?
+L MCU_ST_STM32F1:STM32F103RBTx U1
 U 1 1 602AD02E
-P 5600 3950
-F 0 "U?" H 5950 2150 50  0000 C CNN
-F 1 "STM32F103RBTx" H 6200 2050 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5000 2250 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 5600 3950 50  0001 C CNN
-	1    5600 3950
+P 4800 3700
+F 0 "U1" H 5150 1900 50  0000 C CNN
+F 1 "STM32F103RBTx" H 5400 1800 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4200 2000 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 4800 3700 50  0001 C CNN
+	1    4800 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 2100 5600 2100
-Connection ~ 5650 2100
+	4700 1850 4800 1850
+Connection ~ 4850 1850
 Wire Wire Line
-	5650 2100 5700 2100
+	4850 1850 4900 1850
 Wire Wire Line
-	5800 2100 5900 2100
+	5000 1850 5100 1850
 Wire Wire Line
-	5900 2100 5900 2150
-Connection ~ 5800 2100
+	5100 1850 5100 1900
+Connection ~ 5000 1850
 Wire Wire Line
-	5600 5800 5500 5800
+	4800 5550 4700 5550
 Wire Wire Line
-	5400 5800 5400 5750
+	4600 5550 4600 5500
 Wire Wire Line
-	5500 5750 5500 5800
-Connection ~ 5500 5800
+	4700 5500 4700 5550
+Connection ~ 4700 5550
 Wire Wire Line
-	5500 5800 5400 5800
+	4700 5550 4600 5550
 Wire Wire Line
-	5600 5750 5600 5800
-Connection ~ 5600 5800
+	4800 5500 4800 5550
+Connection ~ 4800 5550
 Wire Wire Line
-	5600 5800 5700 5800
+	4800 5550 4900 5550
 Wire Wire Line
-	5700 5800 5700 5750
+	4900 5550 4900 5500
 Wire Wire Line
-	5700 5800 5800 5800
+	4900 5550 5000 5550
 Wire Wire Line
-	5800 5800 5800 5750
-Connection ~ 5700 5800
+	5000 5550 5000 5500
+Connection ~ 4900 5550
 $Comp
 L Device:C C?
 U 1 1 602E1A11
-P 6750 1300
+P 5950 1050
 AR Path="/6025D9E2/602E1A11" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/6025E7C0/602E1A11" Ref="C?"  Part="1" 
 AR Path="/6025D9E2/60265A76/602E1A11" Ref="C?"  Part="1" 
@@ -475,132 +475,579 @@ AR Path="/60265C89/602E1A11" Ref="C?"  Part="1"
 AR Path="/60265F6D/602E1A11" Ref="C?"  Part="1" 
 AR Path="/60265FC9/602E1A11" Ref="C?"  Part="1" 
 AR Path="/6026601C/602E1A11" Ref="C?"  Part="1" 
-AR Path="/602E1A11" Ref="C?"  Part="1" 
-F 0 "C?" H 6865 1346 50  0000 L CNN
-F 1 "100n" H 6865 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6788 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 6750 1300 50  0001 C CNN
-F 4 "C14663" H 6750 1300 50  0001 C CNN "LCSC"
-	1    6750 1300
+AR Path="/602E1A11" Ref="C6"  Part="1" 
+F 0 "C6" H 6065 1096 50  0000 L CNN
+F 1 "100n" H 6065 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5988 900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 5950 1050 50  0001 C CNN
+F 4 "C14663" H 5950 1050 50  0001 C CNN "LCSC"
+	1    5950 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 1500 6750 1500
+	5500 1250 5950 1250
 Wire Wire Line
-	6750 1500 6750 1450
-Connection ~ 6300 1500
+	5950 1250 5950 1200
+Connection ~ 5500 1250
 Wire Wire Line
-	6300 1100 6750 1100
+	5500 850  5950 850 
 Wire Wire Line
-	6750 1100 6750 1150
-Connection ~ 6300 1100
-Connection ~ 5650 1100
+	5950 850  5950 900 
+Connection ~ 5500 850 
+Connection ~ 4850 850 
 Wire Wire Line
-	5650 1100 5850 1100
-Connection ~ 5650 1500
+	4850 850  5050 850 
+Connection ~ 4850 1250
 Wire Wire Line
-	5650 1500 5850 1500
-Text GLabel 6550 4350 2    50   Input ~ 0
+	4850 1250 5050 1250
+Text GLabel 5750 4100 2    50   Input ~ 0
 SPI_SCK
-Text GLabel 6300 4450 2    50   Input ~ 0
+Text GLabel 5500 4200 2    50   Input ~ 0
 SPI_MISO
-Text GLabel 6300 4550 2    50   Input ~ 0
+Text GLabel 5500 4300 2    50   Input ~ 0
 SPI_MOSI
-Text GLabel 6300 4750 2    50   Input ~ 0
+Text GLabel 5500 4500 2    50   Input ~ 0
 SPI_SS1
-Text GLabel 6300 4850 2    50   Input ~ 0
+Text GLabel 5500 4600 2    50   Input ~ 0
 I2C_SCL
-Text GLabel 6300 4950 2    50   Input ~ 0
+Text GLabel 5500 4700 2    50   Input ~ 0
 I2C_SDA
-Text GLabel 6300 5050 2    50   Input ~ 0
+Text GLabel 5500 4800 2    50   Input ~ 0
 UART_TX
-Text GLabel 6300 5150 2    50   Input ~ 0
+Text GLabel 5500 4900 2    50   Input ~ 0
 UART_RX
-Text GLabel 6300 5350 2    50   Input ~ 0
+Text GLabel 5500 5100 2    50   Input ~ 0
 DISPL_SCK
-Text GLabel 6300 5450 2    50   Input ~ 0
+Text GLabel 5500 5200 2    50   Input ~ 0
 DISPL_MISO
-Text GLabel 6300 4050 2    50   Input ~ 0
+Text GLabel 5500 3800 2    50   Input ~ 0
 MS4_CLK
-Text GLabel 6300 4150 2    50   Input ~ 0
+Text GLabel 5500 3900 2    50   Input ~ 0
 MS4_DAT
-Text GLabel 2400 4550 2    50   Input ~ 0
-MS3_CLK
-Text GLabel 2400 4250 2    50   Input ~ 0
-MS3_DAT
-Text GLabel 6300 2550 2    50   Input ~ 0
+Text GLabel 1900 4250 2    50   Input ~ 0
+MS4_CLK
+Text GLabel 1900 3950 2    50   Input ~ 0
+MS4_DAT
+Text GLabel 5500 2300 2    50   Input ~ 0
 MS1_CLK
-Text GLabel 6300 2650 2    50   Input ~ 0
+Text GLabel 5500 2400 2    50   Input ~ 0
 MS1_DAT
-Text GLabel 6300 2750 2    50   Input ~ 0
+Text GLabel 5500 2500 2    50   Input ~ 0
 MS2_CLK
-Text GLabel 6300 2850 2    50   Input ~ 0
+Text GLabel 5500 2600 2    50   Input ~ 0
 MS2_DAT
-Text GLabel 6300 2950 2    50   Input ~ 0
+Text GLabel 5500 2700 2    50   Input ~ 0
 MS3_CLK
-Text GLabel 6300 3050 2    50   Input ~ 0
+Text GLabel 5500 2800 2    50   Input ~ 0
 MS3_DAT
-Text GLabel 2400 1550 2    50   Input ~ 0
+Text GLabel 1900 1250 2    50   Input ~ 0
 MS1_CLK
-Text GLabel 2400 1250 2    50   Input ~ 0
+Text GLabel 1900 950  2    50   Input ~ 0
 MS1_DAT
-Text GLabel 2400 2550 2    50   Input ~ 0
+Text GLabel 1900 2250 2    50   Input ~ 0
 MS2_CLK
-Text GLabel 2400 2250 2    50   Input ~ 0
+Text GLabel 1900 1950 2    50   Input ~ 0
 MS2_DAT
-Text GLabel 2400 3550 2    50   Input ~ 0
+Text GLabel 1900 3250 2    50   Input ~ 0
 MS3_CLK
-Text GLabel 2400 3250 2    50   Input ~ 0
+Text GLabel 1900 2950 2    50   Input ~ 0
 MS3_DAT
-Text GLabel 6300 4650 2    50   Input ~ 0
+Text GLabel 5500 4400 2    50   Input ~ 0
 SPI_SS0
 Wire Wire Line
-	6550 4250 6450 4250
+	5750 4000 5650 4000
 Wire Wire Line
-	6450 4250 6450 4350
+	5650 4000 5650 4100
 Wire Wire Line
-	6450 4350 6550 4350
-Text GLabel 6300 5550 2    50   Input ~ 0
+	5650 4100 5750 4100
+Text GLabel 5500 5300 2    50   Input ~ 0
 DISPL_MOSI
-Text GLabel 6300 5250 2    50   Input ~ 0
+Text GLabel 5500 5000 2    50   Input ~ 0
 DISPL_T_IRQ
 Wire Wire Line
-	6450 4350 6300 4350
-Connection ~ 6450 4350
-Text GLabel 4900 4650 0    50   Input ~ 0
+	5650 4100 5500 4100
+Connection ~ 5650 4100
+Text GLabel 4100 4400 0    50   Input ~ 0
 DISPL_CS
-Text GLabel 4900 4750 0    50   Input ~ 0
+Text GLabel 4100 4500 0    50   Input ~ 0
 DISPL_RST
-Text GLabel 4900 4850 0    50   Input ~ 0
+Text GLabel 4100 4600 0    50   Input ~ 0
 DISPL_DC
-Text GLabel 4900 4950 0    50   Input ~ 0
+Text GLabel 4100 4700 0    50   Input ~ 0
 DISPL_T_CS
-Text GLabel 6300 3850 2    50   Input ~ 0
+Text GLabel 5500 3600 2    50   Input ~ 0
 BTN4
-Text GLabel 4900 5050 0    50   Input ~ 0
+Text GLabel 4100 4800 0    50   Input ~ 0
 BTN3
-Text GLabel 4900 5150 0    50   Input ~ 0
+Text GLabel 4100 4900 0    50   Input ~ 0
 BTN2
-Text GLabel 4900 5250 0    50   Input ~ 0
+Text GLabel 4100 5000 0    50   Input ~ 0
 BTN1
-Text GLabel 4900 5350 0    50   Input ~ 0
+Text GLabel 4100 5100 0    50   Input ~ 0
 ROT1
-Text GLabel 4900 4050 0    50   Input ~ 0
+Text GLabel 4100 3800 0    50   Input ~ 0
 ADC1
-Text GLabel 4900 4150 0    50   Input ~ 0
+Text GLabel 4100 3900 0    50   Input ~ 0
 ADC2
-Text GLabel 4900 4250 0    50   Input ~ 0
+Text GLabel 4100 4000 0    50   Input ~ 0
 ADC3
-Text GLabel 4900 4350 0    50   Input ~ 0
+Text GLabel 4100 4100 0    50   Input ~ 0
 ADC4
-Text GLabel 6300 3150 2    50   Input ~ 0
+Text GLabel 5500 2900 2    50   Input ~ 0
 ENC_BTN
-Text GLabel 6300 3250 2    50   Input ~ 0
+Text GLabel 5500 3000 2    50   Input ~ 0
 ENC_1
-Text GLabel 6300 3350 2    50   Input ~ 0
+Text GLabel 5500 3100 2    50   Input ~ 0
 ENC_2
-Text GLabel 4900 5450 0    50   Input ~ 0
+Text GLabel 4100 5200 0    50   Input ~ 0
 GPIO1
-Text GLabel 4900 5550 0    50   Input ~ 0
+Text GLabel 4100 5300 0    50   Input ~ 0
 GPIO2
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 60326C45
+P 4250 6500
+F 0 "#PWR0108" H 4250 6350 50  0001 C CNN
+F 1 "+3.3V" H 4265 6673 50  0000 C CNN
+F 2 "" H 4250 6500 50  0001 C CNN
+F 3 "" H 4250 6500 50  0001 C CNN
+	1    4250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J8
+U 1 1 603277B7
+P 4750 6800
+F 0 "J8" H 4722 6682 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 4722 6773 50  0000 R CNN
+F 2 "" H 4750 6800 50  0001 C CNN
+F 3 "~" H 4750 6800 50  0001 C CNN
+	1    4750 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 60329ED8
+P 4550 6500
+F 0 "#PWR0109" H 4550 6350 50  0001 C CNN
+F 1 "+5V" H 4565 6673 50  0000 C CNN
+F 2 "" H 4550 6500 50  0001 C CNN
+F 3 "" H 4550 6500 50  0001 C CNN
+	1    4550 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6600 4250 6600
+Wire Wire Line
+	4250 6600 4250 6500
+$Comp
+L power:GND #PWR0110
+U 1 1 60331DFB
+P 4550 7000
+F 0 "#PWR0110" H 4550 6750 50  0001 C CNN
+F 1 "GND" H 4555 6827 50  0000 C CNN
+F 2 "" H 4550 7000 50  0001 C CNN
+F 3 "" H 4550 7000 50  0001 C CNN
+	1    4550 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4550 6700 0    50   Input ~ 0
+SWDIO
+Text GLabel 4550 6800 0    50   Input ~ 0
+SWCLK
+Text GLabel 4550 6900 0    50   Input ~ 0
+TRACE_SWO
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 6033C407
+P 8650 950
+F 0 "#PWR0111" H 8650 800 50  0001 C CNN
+F 1 "+3.3V" H 8665 1123 50  0000 C CNN
+F 2 "" H 8650 950 50  0001 C CNN
+F 3 "" H 8650 950 50  0001 C CNN
+	1    8650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 6033D944
+P 8650 1550
+F 0 "#PWR0112" H 8650 1300 50  0001 C CNN
+F 1 "GND" H 8655 1377 50  0000 C CNN
+F 2 "" H 8650 1550 50  0001 C CNN
+F 3 "" H 8650 1550 50  0001 C CNN
+	1    8650 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 1050 0    50   Input ~ 0
+SPI_MISO
+Text GLabel 8650 1150 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 8650 1250 0    50   Input ~ 0
+SPI_SCK
+Text GLabel 8650 1350 0    50   Input ~ 0
+SPI_SS0
+Text GLabel 8650 1450 0    50   Input ~ 0
+SPI_SS1
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 6033F86B
+P 10200 1050
+F 0 "J1" H 10172 932 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 10172 1023 50  0000 R CNN
+F 2 "" H 10200 1050 50  0001 C CNN
+F 3 "~" H 10200 1050 50  0001 C CNN
+	1    10200 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 6034039A
+P 10000 1150
+F 0 "#PWR0113" H 10000 900 50  0001 C CNN
+F 1 "GND" H 10005 977 50  0000 C CNN
+F 2 "" H 10000 1150 50  0001 C CNN
+F 3 "" H 10000 1150 50  0001 C CNN
+	1    10000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 6034069F
+P 10000 850
+F 0 "#PWR0114" H 10000 700 50  0001 C CNN
+F 1 "+3.3V" H 10015 1023 50  0000 C CNN
+F 2 "" H 10000 850 50  0001 C CNN
+F 3 "" H 10000 850 50  0001 C CNN
+	1    10000 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 10000 950  0    50   Input ~ 0
+I2C_SCL
+Text GLabel 10000 1050 0    50   Input ~ 0
+I2C_SDA
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 60346B94
+P 10200 1900
+F 0 "J3" H 10172 1782 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 10172 1873 50  0000 R CNN
+F 2 "" H 10200 1900 50  0001 C CNN
+F 3 "~" H 10200 1900 50  0001 C CNN
+	1    10200 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 60346B9A
+P 10000 2000
+F 0 "#PWR0115" H 10000 1750 50  0001 C CNN
+F 1 "GND" H 10005 1827 50  0000 C CNN
+F 2 "" H 10000 2000 50  0001 C CNN
+F 3 "" H 10000 2000 50  0001 C CNN
+	1    10000 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 10000 1800 0    50   Input ~ 0
+UART_TX
+Text GLabel 10000 1900 0    50   Input ~ 0
+UART_RX
+$Comp
+L power:+5V #PWR0116
+U 1 1 6034A7D1
+P 10000 1700
+F 0 "#PWR0116" H 10000 1550 50  0001 C CNN
+F 1 "+5V" H 10015 1873 50  0000 C CNN
+F 2 "" H 10000 1700 50  0001 C CNN
+F 3 "" H 10000 1700 50  0001 C CNN
+	1    10000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x14_Female J7
+U 1 1 603516A9
+P 9500 5350
+F 0 "J7" H 9550 5050 50  0000 L CNN
+F 1 "Conn_01x14_Female" H 9550 4950 50  0000 L CNN
+F 2 "" H 9500 5350 50  0001 C CNN
+F 3 "~" H 9500 5350 50  0001 C CNN
+	1    9500 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9300 4750 0    50   Input ~ 0
+DISPL_T_IRQ
+Text GLabel 9300 4850 0    50   Input ~ 0
+DISPL_MISO
+Text GLabel 9300 4950 0    50   Input ~ 0
+DISPL_MOSI
+Text GLabel 9300 5050 0    50   Input ~ 0
+DISPL_T_CS
+Text GLabel 9300 5150 0    50   Input ~ 0
+DISPL_SCK
+Text GLabel 9300 5250 0    50   Input ~ 0
+DISPL_MISO
+$Comp
+L power:+5V #PWR0117
+U 1 1 60354867
+P 8650 5350
+F 0 "#PWR0117" H 8650 5200 50  0001 C CNN
+F 1 "+5V" H 8665 5523 50  0000 C CNN
+F 2 "" H 8650 5350 50  0001 C CNN
+F 3 "" H 8650 5350 50  0001 C CNN
+	1    8650 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5350 9300 5350
+Text GLabel 9300 5450 0    50   Input ~ 0
+DISPL_SCK
+Text GLabel 9300 5550 0    50   Input ~ 0
+DISPL_MOSI
+Text GLabel 9300 5650 0    50   Input ~ 0
+DISPL_DC
+Text GLabel 9300 5750 0    50   Input ~ 0
+DISPL_RST
+Text GLabel 9300 5850 0    50   Input ~ 0
+DISPL_CS
+$Comp
+L power:GND #PWR0118
+U 1 1 60356E82
+P 8650 6050
+F 0 "#PWR0118" H 8650 5800 50  0001 C CNN
+F 1 "GND" H 8655 5877 50  0000 C CNN
+F 2 "" H 8650 6050 50  0001 C CNN
+F 3 "" H 8650 6050 50  0001 C CNN
+	1    8650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 60357A9C
+P 8650 5950
+F 0 "#PWR0119" H 8650 5800 50  0001 C CNN
+F 1 "+5V" H 8665 6123 50  0000 C CNN
+F 2 "" H 8650 5950 50  0001 C CNN
+F 3 "" H 8650 5950 50  0001 C CNN
+	1    8650 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5950 8950 5950
+Wire Wire Line
+	8950 5950 9050 6050
+Wire Wire Line
+	9050 6050 9300 6050
+Wire Wire Line
+	8650 6050 8950 6050
+Wire Wire Line
+	8950 6050 9050 5950
+Wire Wire Line
+	9050 5950 9300 5950
+$Comp
+L Connector:Conn_01x05_Male J5
+U 1 1 603E87CC
+P 8950 3900
+F 0 "J5" H 8922 3832 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 8922 3923 50  0000 R CNN
+F 2 "" H 8950 3900 50  0001 C CNN
+F 3 "~" H 8950 3900 50  0001 C CNN
+	1    8950 3900
+	-1   0    0    1   
+$EndComp
+Text GLabel 8750 3900 0    50   Input ~ 0
+ENC_BTN
+Text GLabel 8750 3700 0    50   Input ~ 0
+ENC_1
+Text GLabel 8750 3800 0    50   Input ~ 0
+ENC_2
+$Comp
+L power:+5V #PWR0120
+U 1 1 603EFA13
+P 8200 4000
+F 0 "#PWR0120" H 8200 3850 50  0001 C CNN
+F 1 "+5V" H 8215 4173 50  0000 C CNN
+F 2 "" H 8200 4000 50  0001 C CNN
+F 3 "" H 8200 4000 50  0001 C CNN
+	1    8200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 603EFF4C
+P 8200 4100
+F 0 "#PWR0121" H 8200 3850 50  0001 C CNN
+F 1 "GND" H 8205 3927 50  0000 C CNN
+F 2 "" H 8200 4100 50  0001 C CNN
+F 3 "" H 8200 4100 50  0001 C CNN
+	1    8200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4100 8750 4100
+Wire Wire Line
+	8750 4000 8200 4000
+$Comp
+L Connector:Conn_01x05_Male J6
+U 1 1 603FDC24
+P 10200 3900
+F 0 "J6" H 10172 3832 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 10172 3923 50  0000 R CNN
+F 2 "" H 10200 3900 50  0001 C CNN
+F 3 "~" H 10200 3900 50  0001 C CNN
+	1    10200 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 603FE1B4
+P 10000 4100
+F 0 "#PWR0122" H 10000 3850 50  0001 C CNN
+F 1 "GND" H 10005 3927 50  0000 C CNN
+F 2 "" H 10000 4100 50  0001 C CNN
+F 3 "" H 10000 4100 50  0001 C CNN
+	1    10000 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 10000 3700 0    50   Input ~ 0
+BTN1
+Text GLabel 10000 3800 0    50   Input ~ 0
+BTN2
+Text GLabel 10000 3900 0    50   Input ~ 0
+BTN3
+Text GLabel 10000 4000 0    50   Input ~ 0
+BTN4
+$Comp
+L Connector:Conn_01x07_Male J2
+U 1 1 604074C3
+P 8850 1250
+F 0 "J2" H 8822 1182 50  0000 R CNN
+F 1 "Conn_01x07_Male" H 8822 1273 50  0000 R CNN
+F 2 "" H 8850 1250 50  0001 C CNN
+F 3 "~" H 8850 1250 50  0001 C CNN
+	1    8850 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:USB_B_Micro J4
+U 1 1 60412BC0
+P 8500 2650
+F 0 "J4" H 8557 3117 50  0000 C CNN
+F 1 "USB_B_Micro" H 8557 3026 50  0000 C CNN
+F 2 "" H 8650 2600 50  0001 C CNN
+F 3 "~" H 8650 2600 50  0001 C CNN
+	1    8500 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 2650 2    50   Input ~ 0
+USB_D+
+Text GLabel 8800 2750 2    50   Input ~ 0
+USB_D-
+NoConn ~ 8800 2850
+$Comp
+L power:GND #PWR0123
+U 1 1 60424E6E
+P 8500 3050
+F 0 "#PWR0123" H 8500 2800 50  0001 C CNN
+F 1 "GND" H 8505 2877 50  0000 C CNN
+F 2 "" H 8500 3050 50  0001 C CNN
+F 3 "" H 8500 3050 50  0001 C CNN
+	1    8500 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8400 3050
+$Comp
+L power:+5V #PWR0124
+U 1 1 6042B167
+P 8950 2450
+F 0 "#PWR0124" H 8950 2300 50  0001 C CNN
+F 1 "+5V" H 8965 2623 50  0000 C CNN
+F 2 "" H 8950 2450 50  0001 C CNN
+F 3 "" H 8950 2450 50  0001 C CNN
+	1    8950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2450 8800 2450
+Text Notes 5450 7350 2    50   ~ 0
+Programming Interface
+Wire Notes Line
+	3950 7400 3950 6200
+Wire Notes Line
+	3950 6200 5500 6200
+Wire Notes Line
+	5500 6200 5500 7400
+Wire Notes Line
+	5500 7400 3950 7400
+Text Notes 10300 6300 2    50   ~ 0
+Touchdisplay Connector
+Wire Notes Line
+	10350 6350 8550 6350
+Wire Notes Line
+	8550 6350 8550 4600
+Wire Notes Line
+	8550 4600 10350 4600
+Wire Notes Line
+	10350 4600 10350 6350
+$Comp
+L power:+5V #PWR0125
+U 1 1 6045ABC6
+P 9950 4900
+F 0 "#PWR0125" H 9950 4750 50  0001 C CNN
+F 1 "+5V" H 9965 5073 50  0000 C CNN
+F 2 "" H 9950 4900 50  0001 C CNN
+F 3 "" H 9950 4900 50  0001 C CNN
+	1    9950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 6045B027
+P 9950 5200
+F 0 "#PWR0126" H 9950 4950 50  0001 C CNN
+F 1 "GND" H 9955 5027 50  0000 C CNN
+F 2 "" H 9950 5200 50  0001 C CNN
+F 3 "" H 9950 5200 50  0001 C CNN
+	1    9950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6045D472
+P 9950 5050
+AR Path="/6025D9E2/6045D472" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/6025E7C0/6045D472" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265A76/6045D472" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265B58/6045D472" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265BB4/6045D472" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265C25/6045D472" Ref="C?"  Part="1" 
+AR Path="/60265C89/6045D472" Ref="C?"  Part="1" 
+AR Path="/60265F6D/6045D472" Ref="C?"  Part="1" 
+AR Path="/60265FC9/6045D472" Ref="C?"  Part="1" 
+AR Path="/6026601C/6045D472" Ref="C?"  Part="1" 
+AR Path="/6045D472" Ref="C9"  Part="1" 
+F 0 "C9" H 10065 5096 50  0000 L CNN
+F 1 "100n" H 10065 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9988 4900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 9950 5050 50  0001 C CNN
+F 4 "C14663" H 9950 5050 50  0001 C CNN "LCSC"
+	1    9950 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 8550 6450 0    50   ~ 0
+https://www.aliexpress.com/item/4001122632293.html
+NoConn ~ 5500 4000
+NoConn ~ 5500 2200
+NoConn ~ 5500 2100
+NoConn ~ 4100 3600
+NoConn ~ 4100 4200
+NoConn ~ 4100 4300
+$Sheet
+S 750  4750 1150 700 
+U 604E4D29
+F0 "Rotation Input" 50
+F1 "rotation_input.sch" 50
+F2 "DAT" O R 1900 4950 50 
+$EndSheet
+Text GLabel 1900 4950 2    50   Input ~ 0
+ROT1
 $EndSCHEMATC
