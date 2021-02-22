@@ -813,4 +813,6 @@ Wire Wire Line
 	4700 1650 4850 1650
 Wire Wire Line
 	4850 1650 4850 1750
+Text Label 3300 1650 0    50   ~ 0
+5VRAW
 $EndSCHEMATC
