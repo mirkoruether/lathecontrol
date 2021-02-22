@@ -518,25 +518,25 @@ Text GLabel 5500 5100 2    50   Input ~ 0
 DISPL_SCK
 Text GLabel 5500 5200 2    50   Input ~ 0
 DISPL_MISO
-Text GLabel 5500 3800 2    50   Input ~ 0
-MS4_CLK
 Text GLabel 5500 3900 2    50   Input ~ 0
+MS4_CLK
+Text GLabel 5500 3800 2    50   Input ~ 0
 MS4_DAT
 Text GLabel 1900 4250 2    50   Input ~ 0
 MS4_CLK
 Text GLabel 1900 3950 2    50   Input ~ 0
 MS4_DAT
-Text GLabel 5500 2300 2    50   Input ~ 0
-MS1_CLK
 Text GLabel 5500 2400 2    50   Input ~ 0
+MS1_CLK
+Text GLabel 5500 2300 2    50   Input ~ 0
 MS1_DAT
-Text GLabel 5500 2500 2    50   Input ~ 0
-MS2_CLK
 Text GLabel 5500 2600 2    50   Input ~ 0
+MS2_CLK
+Text GLabel 5500 2500 2    50   Input ~ 0
 MS2_DAT
-Text GLabel 5500 2700 2    50   Input ~ 0
-MS3_CLK
 Text GLabel 5500 2800 2    50   Input ~ 0
+MS3_CLK
+Text GLabel 5500 2700 2    50   Input ~ 0
 MS3_DAT
 Text GLabel 1900 1250 2    50   Input ~ 0
 MS1_CLK
