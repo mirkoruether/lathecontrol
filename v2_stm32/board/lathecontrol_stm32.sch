@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -166,36 +166,13 @@ AR Path="/60265C89/6029BFB8" Ref="C?"  Part="1"
 AR Path="/60265F6D/6029BFB8" Ref="C?"  Part="1" 
 AR Path="/60265FC9/6029BFB8" Ref="C?"  Part="1" 
 AR Path="/6026601C/6029BFB8" Ref="C?"  Part="1" 
-AR Path="/6029BFB8" Ref="C6"  Part="1" 
-F 0 "C6" H 4615 1246 50  0000 L CNN
+AR Path="/6029BFB8" Ref="C7"  Part="1" 
+F 0 "C7" H 4615 1246 50  0000 L CNN
 F 1 "100n" H 4615 1155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 1050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4500 1200 50  0001 C CNN
 F 4 "C14663" H 4500 1200 50  0001 C CNN "LCSC"
 	1    4500 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 6029C42F
-P 4950 1200
-AR Path="/6025D9E2/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/6025E7C0/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265A76/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265B58/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265BB4/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6025D9E2/60265C25/6029C42F" Ref="C?"  Part="1" 
-AR Path="/60265C89/6029C42F" Ref="C?"  Part="1" 
-AR Path="/60265F6D/6029C42F" Ref="C?"  Part="1" 
-AR Path="/60265FC9/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6026601C/6029C42F" Ref="C?"  Part="1" 
-AR Path="/6029C42F" Ref="C7"  Part="1" 
-F 0 "C7" H 5065 1246 50  0000 L CNN
-F 1 "100n" H 5065 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4988 1050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf" H 4950 1200 50  0001 C CNN
-F 4 "C14663" H 4950 1200 50  0001 C CNN "LCSC"
-	1    4950 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -226,28 +203,18 @@ Wire Wire Line
 Wire Wire Line
 	3150 1400 3600 1400
 Wire Wire Line
-	4950 1400 4950 1350
-Wire Wire Line
 	3600 1350 3600 1400
 Connection ~ 3600 1400
 Wire Wire Line
 	3600 1400 4050 1400
 Wire Wire Line
 	4500 1350 4500 1400
-Connection ~ 4500 1400
-Wire Wire Line
-	4500 1400 4950 1400
 Wire Wire Line
 	3150 1050 3150 1000
 Wire Wire Line
 	3150 1000 3600 1000
 Wire Wire Line
-	4950 1000 4950 1050
-Wire Wire Line
 	4500 1050 4500 1000
-Connection ~ 4500 1000
-Wire Wire Line
-	4500 1000 4950 1000
 Wire Wire Line
 	3600 1050 3600 1000
 Connection ~ 3600 1000
@@ -1293,4 +1260,58 @@ F 3 "~" H 7250 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8350 6200 8350 6250
+$Comp
+L power:GND #PWR?
+U 1 1 605079AF
+P 10300 4300
+AR Path="/60278C87/605079AF" Ref="#PWR?"  Part="1" 
+AR Path="/605079AF" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 10300 4050 50  0001 C CNN
+F 1 "GND" H 10305 4127 50  0000 C CNN
+F 2 "" H 10300 4300 50  0001 C CNN
+F 3 "" H 10300 4300 50  0001 C CNN
+	1    10300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 605079B6
+P 10300 4150
+AR Path="/6025D9E2/605079B6" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/6025E7C0/605079B6" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265A76/605079B6" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265B58/605079B6" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265BB4/605079B6" Ref="C?"  Part="1" 
+AR Path="/6025D9E2/60265C25/605079B6" Ref="C?"  Part="1" 
+AR Path="/60265C89/605079B6" Ref="C?"  Part="1" 
+AR Path="/60265F6D/605079B6" Ref="C?"  Part="1" 
+AR Path="/60265FC9/605079B6" Ref="C?"  Part="1" 
+AR Path="/6026601C/605079B6" Ref="C?"  Part="1" 
+AR Path="/605079B6" Ref="C12"  Part="1" 
+AR Path="/60278C87/605079B6" Ref="C?"  Part="1" 
+F 0 "C12" H 10415 4196 50  0000 L CNN
+F 1 "10u" H 10415 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10338 4000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL31A106KBHNNNE_C13585.pdf" H 10300 4150 50  0001 C CNN
+F 4 "C13585" H 10300 4150 50  0001 C CNN "LCSC"
+	1    10300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 6050A8C0
+P 10300 4000
+F 0 "#PWR013" H 10300 3850 50  0001 C CNN
+F 1 "+5V" H 10315 4173 50  0000 C CNN
+F 2 "" H 10300 4000 50  0001 C CNN
+F 3 "" H 10300 4000 50  0001 C CNN
+	1    10300 4000
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 750  6750 1150 700 
+U 60592617
+F0 "Current Loop Output" 50
+F1 "currentloop_output.sch" 50
+$EndSheet
 $EndSCHEMATC
