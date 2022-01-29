@@ -16,3 +16,6 @@
 [submodule "OneButton"]
 	path = v1_arduino_mega/lib/OneButton
 	url = https://github.com/mathertel/OneButton
+[submodule "v2_custom_pcb/board/lib/rp2040"]
+	path = v2_custom_pcb/board/lib/rp2040
+	url = https://github.com/HeadBoffin/RP_Silicon_KiCad.git
