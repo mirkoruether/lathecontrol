@@ -768,7 +768,7 @@
         "uuid": "7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
       }
     ],
-    "used_designators": "D5-6,#PWR2,#PWR78-88,#PWR90,C6,C18-21,C23,J14,R2,R20-22,R25-26,U2-6,Q2",
+    "used_designators": "D5-9,#PWR1-5,#PWR12,#PWR14,#PWR18,#PWR20-21,#PWR23,#PWR26-36,#PWR43-44,#PWR51-52,#PWR59-60,#PWR67-101,#PWR103-128,C1-11,C13-32,J2,J8,J13-14,R1-4,R13-51,U2-15,Q1-2,TP1-3,Y1,JP1",
     "variants": []
   },
   "sheets": [
@@ -778,19 +778,19 @@
     ],
     [
       "00000000-0000-0000-0000-000060265c89",
-      "Measurestick Input 1"
+      "Calipers1"
     ],
     [
       "00000000-0000-0000-0000-000060265f6d",
-      "Measurestick Input 2"
+      "Calipers2"
     ],
     [
       "00000000-0000-0000-0000-000060265fc9",
-      "Measurestick Input 3"
+      "Calipers3"
     ],
     [
       "00000000-0000-0000-0000-00006026601c",
-      "Measurestick Input 4"
+      "Calipers4"
     ]
   ],
   "text_variables": {},
