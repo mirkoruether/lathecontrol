@@ -277,7 +277,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Amplifier_Operational:LM2904"
+		(symbol "Amplifier_Operational:LM358"
 			(pin_names
 				(offset 0.127)
 			)
@@ -297,7 +297,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LM2904"
+			(property "Value" "LM358"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -319,7 +319,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm358.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -330,7 +330,7 @@
 					)
 				)
 			)
-			(property "Description" "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8"
+			(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -373,7 +373,7 @@
 					)
 				)
 			)
-			(symbol "LM2904_1_1"
+			(symbol "LM358_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -441,7 +441,7 @@
 					)
 				)
 			)
-			(symbol "LM2904_2_1"
+			(symbol "LM358_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -509,7 +509,7 @@
 					)
 				)
 			)
-			(symbol "LM2904_3_1"
+			(symbol "LM358_3_1"
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -6571,9 +6571,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Isolator:6N137"
+		(symbol "Isolator:LTV-817S"
 			(pin_names
-				(offset 0)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6581,7 +6581,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -4.064 8.89 0)
+				(at -3.81 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -6590,8 +6590,8 @@
 					)
 				)
 			)
-			(property "Value" "6N137"
-				(at 0 -8.89 0)
+			(property "Value" "LTV-817S"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -6600,19 +6600,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://docs.broadcom.com/docs/AV02-0940EN"
-				(at -21.59 13.97 0)
+			(property "Footprint" "Package_DIP:SMDIP-4_W9.53mm"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6622,7 +6611,18 @@
 					)
 				)
 			)
-			(property "Description" "Single High Speed LSTTL/TTL Compatible Optocoupler with enable, dV/dt 1000/us, VCM 10, max 7V VCC, DIP-8"
+			(property "Datasheet" "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF"
+				(at -8.89 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "DC Optocoupler, Vce 35V, CTR 50%, SMDIP-4"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6633,7 +6633,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "High speed optically coupled gates enable"
+			(property "ki_keywords" "NPN DC Optocoupler"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6644,7 +6644,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
+			(property "ki_fp_filters" "SMDIP*W9.53mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6655,191 +6655,10 @@
 					)
 				)
 			)
-			(symbol "6N137_0_1"
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -3.937 -5.08) (xy -3.937 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -1.905) (xy -0.635 -1.524) (xy 0.508 -1.524)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -3.302) (xy -0.635 -3.683) (xy 0.635 -3.683)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 5.08) (xy 5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -4.064) (xy 1.27 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 -1.27) (xy 2.032 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -1.524)
-					(radius 0.254)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -1.778) (xy 2.667 -0.762) (xy 3.175 -0.762) (xy 3.175 -1.143)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -2.159) (xy 2.667 -2.921)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -2.667) (xy 0.635 -4.699) (xy 0.635 -0.635) (xy 2.667 -2.667)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -3.175) (xy 3.429 -3.937) (xy 3.302 -3.556) (xy 3.048 -3.81) (xy 3.429 -3.937)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -3.302) (xy 2.667 -4.318) (xy 2.159 -4.318) (xy 2.159 -3.937)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -3.556) (xy 2.667 -1.651)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -2.54) (xy 3.81 -1.524) (xy 3.81 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.429 -3.937) (xy 3.429 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "6N137_1_1"
+			(symbol "LTV-817S_1_1"
 				(rectangle
-					(start -5.08 7.62)
-					(end 5.08 -7.62)
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -6850,7 +6669,19 @@
 				)
 				(polyline
 					(pts
-						(xy -4.572 -3.175) (xy -3.302 -3.175)
+						(xy -5.08 2.54) (xy -2.54 2.54) (xy -2.54 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -0.635) (xy -1.905 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -6862,7 +6693,19 @@
 				)
 				(polyline
 					(pts
-						(xy -3.937 -3.175) (xy -4.572 -1.905) (xy -3.302 -1.905) (xy -3.937 -3.175)
+						(xy -2.54 -0.635) (xy -2.54 -2.54) (xy -5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -0.635) (xy -3.175 0.635) (xy -1.905 0.635) (xy -2.54 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -6874,31 +6717,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.921 -2.032) (xy -2.159 -2.032) (xy -2.54 -2.159) (xy -2.54 -1.905) (xy -2.159 -2.032)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.921 -3.048) (xy -2.159 -3.048) (xy -2.54 -3.175) (xy -2.54 -2.921) (xy -2.159 -3.048)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 6.096) (xy -1.651 4.826)
+						(xy -0.508 0.508) (xy 0.762 0.508) (xy 0.381 0.381) (xy 0.381 0.635) (xy 0.762 0.508)
 					)
 					(stroke
 						(width 0)
@@ -6910,7 +6729,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 3.81) (xy -1.651 2.54)
+						(xy -0.508 -0.508) (xy 0.762 -0.508) (xy 0.381 -0.635) (xy 0.381 -0.381) (xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -6922,7 +6741,19 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 1.524) (xy -1.651 0.254)
+						(xy 2.54 1.905) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0.635) (xy 4.445 2.54)
 					)
 					(stroke
 						(width 0)
@@ -6934,7 +6765,19 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 -0.762) (xy -1.651 -2.032)
+						(xy 3.048 -1.651) (xy 3.556 -1.143) (xy 4.064 -2.159) (xy 3.048 -1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 2.54) (xy 5.08 2.54)
 					)
 					(stroke
 						(width 0)
@@ -6946,7 +6789,19 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 -3.048) (xy -1.651 -4.318)
+						(xy 4.445 -2.54) (xy 2.54 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 -2.54) (xy 5.08 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -6956,50 +6811,13 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.651 -5.334) (xy -1.651 -6.604)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.905) (xy 0 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -1.905) (xy -1.27 -3.175) (xy 0 -3.175) (xy -0.635 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin no_connect line
-					(at -5.08 5.08 0)
+				(pin passive line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name ""
 						(effects
 							(font
-								(size 0.635 0.635)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -7012,12 +6830,12 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 0 0)
+					(at -7.62 -2.54 0)
 					(length 2.54)
-					(name "A"
+					(name ""
 						(effects
 							(font
-								(size 0.635 0.635)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -7030,12 +6848,12 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -5.08 0)
+					(at 7.62 -2.54 180)
 					(length 2.54)
-					(name "C"
+					(name ""
 						(effects
 							(font
-								(size 0.635 0.635)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -7047,71 +6865,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
+				(pin passive line
 					(at 7.62 2.54 180)
 					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-					(number "7"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-				)
-				(pin power_in line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9821,6 +9585,163 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Linear:L78L05_SOT89"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L78L05_SOT89"
+				(at -0.635 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Voltage Regulator 100mA Positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?89*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L78L05_SOT89_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "L78L05_SOT89_1_1"
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:LM317_TO-252"
 			(pin_names
 				(offset 0.254)
@@ -11868,17 +11789,6 @@
 		)
 		(uuid "0db9e7cd-d27c-4426-94e2-7961a5838005")
 	)
-	(text "Max 7V\n"
-		(exclude_from_sim no)
-		(at 337.82 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b65fbef-c40d-4295-b032-edb6f01cc010")
-	)
 	(text "RP2040"
 		(exclude_from_sim no)
 		(at 16.764 18.542 0)
@@ -11933,17 +11843,6 @@
 			(justify left bottom)
 		)
 		(uuid "62ef0b96-f5db-4e55-9a90-cc54eaa6b876")
-	)
-	(text "4...20mA output for frequency converter"
-		(exclude_from_sim no)
-		(at 300.482 197.612 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7827d614-f9b9-4195-add5-758a9ddbd9ad")
 	)
 	(text "Touchdisplay Connector"
 		(exclude_from_sim no)
@@ -12273,10 +12172,6 @@
 		(uuid "f763a554-81cc-4212-98d0-3c3de295b1c5")
 	)
 	(no_connect
-		(at 364.49 191.77)
-		(uuid "292d8851-48fc-46c7-9644-926001827209")
-	)
-	(no_connect
 		(at 104.14 119.38)
 		(uuid "2a898cff-07b9-487d-98e7-9e97e0e7e449")
 	)
@@ -12329,10 +12224,6 @@
 		(uuid "6f03489e-f722-4231-a019-0c3cb180d7b3")
 	)
 	(no_connect
-		(at 379.73 189.23)
-		(uuid "78735d51-2458-4f00-921d-8957b64e0349")
-	)
-	(no_connect
 		(at 212.09 113.03)
 		(uuid "7d631b2d-51c6-401d-bc56-267c938bccab")
 	)
@@ -12375,10 +12266,6 @@
 	(no_connect
 		(at 104.14 104.14)
 		(uuid "f3c5cb10-b7c3-4faa-b053-ed5ed3501fbe")
-	)
-	(no_connect
-		(at 364.49 186.69)
-		(uuid "f4a688c0-14a6-4667-a18b-d183bd782931")
 	)
 	(no_connect
 		(at 104.14 71.12)
@@ -12431,16 +12318,6 @@
 			(type default)
 		)
 		(uuid "044dde97-ee2e-473a-9264-ed4dff1893a5")
-	)
-	(wire
-		(pts
-			(xy 347.98 153.67) (xy 347.98 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04723be6-a87a-4318-b7ff-db31bc2c1ff3")
 	)
 	(wire
 		(pts
@@ -12611,16 +12488,6 @@
 			(type default)
 		)
 		(uuid "17cd51fb-0523-47f5-a462-29bc94f4f715")
-	)
-	(wire
-		(pts
-			(xy 320.04 162.56) (xy 320.04 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "191a56eb-48b5-4f80-8347-b00ea67e5f1f")
 	)
 	(wire
 		(pts
@@ -13162,16 +13029,6 @@
 		)
 		(uuid "54e7ee04-1bb3-4a6f-a150-8ee123440980")
 	)
-	(polyline
-		(pts
-			(xy 384.81 139.7) (xy 384.81 199.39)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "56e8292d-e12d-42fa-93be-81afcf73abc4")
-	)
 	(wire
 		(pts
 			(xy 125.73 119.38) (xy 125.73 127)
@@ -13364,16 +13221,6 @@
 	)
 	(wire
 		(pts
-			(xy 341.63 157.48) (xy 341.63 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71eb4a05-adbc-4300-a8ef-e4b280c8055d")
-	)
-	(wire
-		(pts
 			(xy 73.66 33.02) (xy 73.66 34.29)
 		)
 		(stroke
@@ -13424,16 +13271,6 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 157.48) (xy 341.63 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78879a6e-79ef-4c47-ad08-4db013f96b19")
-	)
-	(wire
-		(pts
 			(xy 271.78 234.95) (xy 271.78 238.76)
 		)
 		(stroke
@@ -13471,16 +13308,6 @@
 			(type default)
 		)
 		(uuid "7dd7db74-c2fb-4e1e-9f94-77da6b4643ba")
-	)
-	(wire
-		(pts
-			(xy 341.63 167.64) (xy 364.49 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e29ad02-aad6-47e0-8618-e51d0dc3fa80")
 	)
 	(wire
 		(pts
@@ -13532,16 +13359,6 @@
 		)
 		(uuid "843b53af-dd34-4db8-aa6b-5035b25affc7")
 	)
-	(polyline
-		(pts
-			(xy 384.81 139.7) (xy 298.45 139.7)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "851c1822-b661-4533-86cc-6d7461f9e9b9")
-	)
 	(wire
 		(pts
 			(xy 143.51 232.41) (xy 142.24 232.41)
@@ -13561,16 +13378,6 @@
 			(type default)
 		)
 		(uuid "86646d5d-d670-47c4-838d-c487945120af")
-	)
-	(polyline
-		(pts
-			(xy 298.45 139.7) (xy 298.45 200.66)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "89b40d72-e1fb-49ce-ab36-0fd172b1f09d")
 	)
 	(wire
 		(pts
@@ -13632,16 +13439,6 @@
 		)
 		(uuid "8e50d96b-409c-4b5a-9b7d-a30a1b33c715")
 	)
-	(polyline
-		(pts
-			(xy 384.81 200.66) (xy 298.45 200.66)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "8f3f8693-7364-4ca3-8592-da3ce4d93af9")
-	)
 	(wire
 		(pts
 			(xy 66.04 232.41) (xy 64.77 232.41)
@@ -13651,16 +13448,6 @@
 			(type default)
 		)
 		(uuid "903d761f-a752-4fe3-8f28-73f8dbea4750")
-	)
-	(wire
-		(pts
-			(xy 347.98 152.4) (xy 336.55 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9085293d-86f2-402b-8647-8278fe79f81d")
 	)
 	(wire
 		(pts
@@ -13711,16 +13498,6 @@
 			(type dash)
 		)
 		(uuid "92bd1111-b941-4c03-b7ec-a08a9359bc50")
-	)
-	(wire
-		(pts
-			(xy 320.04 157.48) (xy 321.31 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "951c03a2-625a-44d5-a702-151a80823e67")
 	)
 	(wire
 		(pts
@@ -14021,16 +13798,6 @@
 			(type default)
 		)
 		(uuid "be08fb35-ba41-4ee0-9289-97cfc1633bc6")
-	)
-	(wire
-		(pts
-			(xy 321.31 162.56) (xy 320.04 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf57edc5-3943-427e-9f28-8095d7536d9a")
 	)
 	(wire
 		(pts
@@ -15594,30 +15361,6 @@
 			)
 		)
 	)
-	(global_label "PWM_OUT"
-		(shape input)
-		(at 312.42 157.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f479ccf1-7fa2-41dc-923e-d6e759e4516d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 301.32 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Connector:Conn_01x14_Female")
 		(at 295.91 44.45 0)
@@ -15629,7 +15372,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603516a9")
-		(property "Reference" "J7"
+		(property "Reference" "J2"
 			(at 297.18 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15728,7 +15471,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J7")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -15745,7 +15488,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060356e82")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR017"
 			(at 274.32 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -15804,7 +15547,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR025")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -15821,7 +15564,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060357a9c")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR015"
 			(at 274.32 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -15880,7 +15623,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR024")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -15897,7 +15640,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603e87cc")
-		(property "Reference" "J6"
+		(property "Reference" "J3"
 			(at 245.8212 54.1528 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15969,7 +15712,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J6")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -15986,7 +15729,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603eff4c")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 226.06 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -16045,7 +15788,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -16062,7 +15805,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603fdc24")
-		(property "Reference" "J5"
+		(property "Reference" "J1"
 			(at 245.8212 35.1028 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16134,7 +15877,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J5")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -16151,7 +15894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603fe1b4")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR06"
 			(at 240.03 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16210,7 +15953,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR019")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -16227,7 +15970,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000605079af")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR07"
 			(at 307.34 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16286,7 +16029,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR015")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -16303,7 +16046,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000605079b6")
-		(property "Reference" "C12"
+		(property "Reference" "C9"
 			(at 310.261 36.9316 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16377,7 +16120,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C12")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -16394,7 +16137,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006050a8c0")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR03"
 			(at 307.34 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -16453,7 +16196,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR013")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -16547,7 +16290,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000607536da")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR018"
 			(at 257.81 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -16606,7 +16349,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR022")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -17008,7 +16751,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000608200c0")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR014"
 			(at 226.06 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -17067,7 +16810,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR0102")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -17084,7 +16827,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00ab2985-f819-497a-8f75-d23a1ed8c255")
-		(property "Reference" "R25"
+		(property "Reference" "R3"
 			(at 242.57 102.6922 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17156,7 +16899,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R25")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -17175,7 +16918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0190a3af-650e-4747-a40a-dfa9e907f73f")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR039"
 			(at 132.08 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -17235,7 +16978,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR068")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -17252,7 +16995,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "03be7cc8-cfc8-42f7-9150-90c339c0e2d1")
-		(property "Reference" "R24"
+		(property "Reference" "R7"
 			(at 111.76 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17325,7 +17068,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R24")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -17342,7 +17085,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0589760f-35b4-499c-b5f3-91c2997dc8b8")
-		(property "Reference" "R21"
+		(property "Reference" "R19"
 			(at 273.558 254.1016 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17416,47 +17159,46 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM2904")
-		(at 369.57 151.13 0)
-		(unit 3)
+		(lib_id "Amplifier_Operational:LM358")
+		(at 335.28 151.13 0)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "08c53020-82a7-45ae-90fe-cfc107acc246")
-		(property "Reference" "U3"
-			(at 368.5032 149.9616 0)
+		(fields_autoplaced yes)
+		(uuid "0d6d34e8-f10b-4593-ab3d-fb0bf5ce7ce9")
+		(property "Reference" "U4"
+			(at 335.28 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "LM2904"
-			(at 368.5032 152.273 0)
+		(property "Value" "LM358DR2G"
+			(at 335.28 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 369.57 151.13 0)
+			(at 335.28 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17466,8 +17208,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm358.pdf"
-			(at 369.57 151.13 0)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579708932857913344-C7950.pdf?response-content-disposition=attachment%3B%20filename%3DC7950.pdf%3B%20filename%2A%3DUTF-8%27%27C7950.pdf&x-oss-date=20260920T194308Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rSeOiHvql7xJWDNG35ljQAb8lJpaj%2FoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbcFq2cl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkouTljjGjvyAFpORa%2Bb5wchMHn6pr9EWOXuJZUIn3b%2FstWNupKq5ldctHSeoXq108CXVnU5PXYIJBVZSaKWD5sagAGNa4PTP%2BsQT4uwNQvId4Dj%2FoSiHdzxUYlJsSIsQUTzHGvSWWJ7XpaFQsw79QxNH%2B2IIhN3wEiuFum%2FaolyURV51DilcjULMhI8DrZuoNWcLWPvHk7DxfDv6I0SUxF%2FOEsJu5zO071%2FZGsL7CjJoHU0MSAsmnriNrPdwXed%2F2YGTCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYg3R3SvZsWh6KHr4UcFeJmTB%2F20260920%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1290277d2b5230b37f6cc0dbc9ccccd6ff5dec87e7b80feabbab4facbe98e0ea"
+			(at 335.28 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17477,8 +17219,9 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 369.57 151.13 0)
+		(property "Description" "-16V~16V 0℃~+70℃ 2 3V~32V 40mA 45nA 5nA 700uA 70dB 7mV 7uV/℃ Built-in compensation、ESD protection SOIC-8 Operational Amplifier ROHS"
+			(at 335.28 151.13 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17487,35 +17230,46 @@
 				)
 			)
 		)
-		(pin "4"
-			(uuid "8c39b5b7-0902-4693-a33e-51e921f117e6")
-		)
-		(pin "8"
-			(uuid "19809c1f-0f50-409a-b90a-12047b946548")
-		)
-		(pin "5"
-			(uuid "6314b81a-01a1-41f5-90cf-639d0445e4b1")
+		(property "LCSC" "C7950"
+			(at 335.28 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "7"
-			(uuid "91151f7d-331c-4da7-bf1f-e2d7ecd2b9e7")
+			(uuid "aebcabe6-6aa5-4c4c-8f18-e03c84ff2556")
 		)
 		(pin "1"
-			(uuid "e6f54f6c-0447-4c45-b31e-483773544f97")
-		)
-		(pin "3"
-			(uuid "42df91c8-6481-44c0-b508-67c141df6474")
-		)
-		(pin "2"
-			(uuid "00fe16d9-f586-4441-9e35-16365c38403d")
+			(uuid "adfdba67-160f-47cf-8ad1-7cdaddadf299")
 		)
 		(pin "6"
-			(uuid "15e7a22f-0966-4c88-a236-5d5193fb999e")
+			(uuid "a4efb16b-e7db-4628-a87f-15a8d7c2c192")
+		)
+		(pin "5"
+			(uuid "20be0f4f-f476-4caa-b927-52a8936b12c4")
+		)
+		(pin "8"
+			(uuid "22ed671e-f706-4b3a-8340-cb3dd8b2cf1f")
+		)
+		(pin "4"
+			(uuid "0681ff62-690f-43fa-af2a-d18da4c11c15")
+		)
+		(pin "2"
+			(uuid "ba3b40e7-325c-43e6-90f6-7de321297e7e")
+		)
+		(pin "3"
+			(uuid "8d24af71-0fa6-4741-9db6-83544259ee15")
 		)
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U3")
-					(unit 3)
+					(reference "U4")
+					(unit 1)
 				)
 			)
 		)
@@ -17533,7 +17287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0de84a38-dd39-431b-ad27-eba088408604")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR050"
 			(at 21.59 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -17594,7 +17348,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR018")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -17611,7 +17365,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10e70368-dd71-4035-a60c-83c411a1bbcb")
-		(property "Reference" "R13"
+		(property "Reference" "R15"
 			(at 30.48 227.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17684,7 +17438,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R13")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -17701,7 +17455,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "120ffb98-ee69-40bd-ad2b-2334f390e007")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR062"
 			(at 248.92 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -17760,7 +17514,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR079")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -17779,7 +17533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "131ab717-792b-4ffe-9299-f812a3ad3afa")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR021"
 			(at 158.75 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -17839,7 +17593,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR014")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -17858,7 +17612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1414db94-b112-4fe8-91f8-b1d41c1ac45d")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR04"
 			(at 39.37 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -17918,7 +17672,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR043")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -17935,7 +17689,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "145fdc0f-ff23-46e4-8407-81064c059855")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR059"
 			(at 212.09 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -17994,7 +17748,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR087")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -18013,7 +17767,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14bacdcd-4924-4665-8c79-1daab986729c")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR05"
 			(at 82.55 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -18073,7 +17827,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR072")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -18091,7 +17845,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14d8fa31-4540-4283-8521-fa72e45fc335")
-		(property "Reference" "U7"
+		(property "Reference" "U6"
 			(at 53.34 236.5431 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18199,7 +17953,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U7")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -18218,7 +17972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14f2a10c-4104-41b0-b8ef-f00ed59a4d1f")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 209.3214 182.9379 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18299,7 +18053,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -18318,7 +18072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "166849ac-a8f5-4e9e-852a-cd86bbcc26ca")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR036"
 			(at 74.93 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -18378,7 +18132,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR091")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -18395,7 +18149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "171cb387-dc68-4624-bc64-84a2ce09e498")
-		(property "Reference" "R28"
+		(property "Reference" "R4"
 			(at 118.11 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18470,7 +18224,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R28")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -18487,7 +18241,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1cd4b489-10c9-42e9-8f50-a72f4a997065")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR052"
 			(at 212.09 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -18546,7 +18300,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR086")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -18563,7 +18317,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1ec80a2a-bc3d-41c3-bd20-049d9958a2bc")
-		(property "Reference" "D8"
+		(property "Reference" "D2"
 			(at 183.388 215.646 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18635,7 +18389,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "D8")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -18652,7 +18406,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20aaec55-f3b8-4c85-ae57-ac6220a62205")
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 256.3114 119.4816 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18721,7 +18475,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -18739,7 +18493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "233ab2a2-47e0-4d3a-a740-6a1da22a1262")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR040"
 			(at 179.07 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -18799,7 +18553,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR034")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -18816,7 +18570,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24c822b5-962b-49f6-9aa3-0a35b0cc274f")
-		(property "Reference" "D6"
+		(property "Reference" "D4"
 			(at 227.7872 239.0394 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18890,7 +18644,104 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "D6")
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:LTV-817S")
+		(at 281.94 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2abb694f-e165-4d3b-8e84-36e41872eea4")
+		(property "Reference" "U15"
+			(at 281.94 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTV-817S-TA1-C"
+			(at 281.94 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:SMDIP-4_W9.53mm"
+			(at 281.94 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588884725758889984-C109227.pdf?response-content-disposition=attachment%3B%20filename%3DC109227.pdf%3B%20filename%2A%3DUTF-8%27%27C109227.pdf&x-oss-date=20260920T193455Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rSeOiHvql7xJWDNG35ljQAb8lJpaj%2FoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbcFq2cl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkouTljjGjvyAFpORa%2Bb5wchMHn6pr9EWOXuJZUIn3b%2FstWNupKq5ldctHSeoXq108CXVnU5PXYIJBVZSaKWD5sagAGNa4PTP%2BsQT4uwNQvId4Dj%2FoSiHdzxUYlJsSIsQUTzHGvSWWJ7XpaFQsw79QxNH%2B2IIhN3wEiuFum%2FaolyURV51DilcjULMhI8DrZuoNWcLWPvHk7DxfDv6I0SUxF%2FOEsJu5zO071%2FZGsL7CjJoHU0MSAsmnriNrPdwXed%2F2YGTCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYg3R3SvZsWh6KHr4UcFeJmTB%2F20260920%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=10b4861f1f01521cfbc45be4a51dae1a8d451dd91fafedbba566f62d06acf255"
+			(at 273.05 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-30℃~+110℃ 1 1.2V 100mV@1mA,20mA 35V 3us 4us@2mA,100Ω 50% 50mA 50mA 5kV 600% 6V DC Phototransistor SMD-4P Transistor, Photovoltaic Output Optoisolators ROHS"
+			(at 281.94 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C109227"
+			(at 281.94 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d4b09ba-e3b7-4b5c-80c2-002b4d97efd0")
+		)
+		(pin "2"
+			(uuid "0fceaa25-0d1c-467f-a0fc-0f1d59f7de63")
+		)
+		(pin "4"
+			(uuid "0e51580a-b01a-45f5-bfb2-f43a1a35f9d2")
+		)
+		(pin "3"
+			(uuid "42be5f19-b570-4d02-97f7-72cdd106a35a")
+		)
+		(instances
+			(project "lathecontrol_v3"
+				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -18907,7 +18758,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "30c82fd9-c03a-4df5-bd55-8bee957e6059")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR020"
 			(at 269.24 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -18966,7 +18817,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR090")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -18985,7 +18836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "335ac847-abf5-4a59-98c0-f09ade21189e")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR051"
 			(at 99.06 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -19046,7 +18897,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR028")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -19063,7 +18914,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34fa7c30-2709-4ec3-a33d-d724168cb9c3")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR063"
 			(at 271.78 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -19122,7 +18973,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR080")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -19141,7 +18992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3566d578-f136-4af5-b999-cdeaf7136076")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR013"
 			(at 92.71 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -19201,7 +19052,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR075")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -19218,7 +19069,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "38701b62-3067-494e-bd5f-a066d76b6d98")
-		(property "Reference" "C21"
+		(property "Reference" "C18"
 			(at 215.011 231.2416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19292,7 +19143,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C21")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -19309,7 +19160,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39614c1d-7ba9-4b41-bf57-11700ea02ebe")
-		(property "Reference" "R27"
+		(property "Reference" "R8"
 			(at 111.76 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19382,7 +19233,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R27")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -19400,7 +19251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "397dbe45-0bd9-4590-8326-de66c82cf574")
-		(property "Reference" "C16"
+		(property "Reference" "C6"
 			(at 84.8741 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19475,7 +19326,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C16")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -19493,7 +19344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a260360-fb6e-42e4-abe9-0de19b8c4e96")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR026"
 			(at 160.02 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -19554,7 +19405,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR094")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -19571,7 +19422,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3bed79de-4263-482e-8a34-d92f5b6dcde0")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR057"
 			(at 186.69 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -19630,7 +19481,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR084")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -19648,7 +19499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c9868b7-09cb-438c-bcab-6555f18bb15c")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR01"
 			(at 39.37 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -19708,7 +19559,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR036")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -19816,7 +19667,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "409a2eb9-a08c-486f-a217-08ffd7bd8cc7")
-		(property "Reference" "U6"
+		(property "Reference" "U2"
 			(at 261.62 102.235 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19897,7 +19748,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U6")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -19915,7 +19766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4201a8dd-4e39-40e1-86e6-506b2966ed20")
-		(property "Reference" "C13"
+		(property "Reference" "C3"
 			(at 58.2041 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19990,7 +19841,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C13")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -20008,7 +19859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42a068e0-1604-4118-820d-90d9ed5da532")
-		(property "Reference" "R23"
+		(property "Reference" "R10"
 			(at 45.9486 178.4263 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20083,7 +19934,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R23")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -20100,7 +19951,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44fc76d2-5b7f-4d6b-ba69-652b9058a82f")
-		(property "Reference" "C23"
+		(property "Reference" "C12"
 			(at 234.696 110.998 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20174,7 +20025,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C23")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -20192,7 +20043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49c960b5-8e9f-409c-a120-d839a35b9b6f")
-		(property "Reference" "J13"
+		(property "Reference" "J6"
 			(at 157.48 166.0355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20277,7 +20128,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J13")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -20294,7 +20145,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49f52781-5395-4de9-96e6-4f611bc9d0a1")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR060"
 			(at 224.79 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -20353,8 +20204,117 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR088")
+					(reference "#PWR060")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 335.28 165.1 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a4a63db-b27c-482e-8256-bf6a1dea4adf")
+		(property "Reference" "U4"
+			(at 335.28 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM358DR2G"
+			(at 335.28 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579708932857913344-C7950.pdf?response-content-disposition=attachment%3B%20filename%3DC7950.pdf%3B%20filename%2A%3DUTF-8%27%27C7950.pdf&x-oss-date=20260920T194308Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rSeOiHvql7xJWDNG35ljQAb8lJpaj%2FoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbcFq2cl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkouTljjGjvyAFpORa%2Bb5wchMHn6pr9EWOXuJZUIn3b%2FstWNupKq5ldctHSeoXq108CXVnU5PXYIJBVZSaKWD5sagAGNa4PTP%2BsQT4uwNQvId4Dj%2FoSiHdzxUYlJsSIsQUTzHGvSWWJ7XpaFQsw79QxNH%2B2IIhN3wEiuFum%2FaolyURV51DilcjULMhI8DrZuoNWcLWPvHk7DxfDv6I0SUxF%2FOEsJu5zO071%2FZGsL7CjJoHU0MSAsmnriNrPdwXed%2F2YGTCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYg3R3SvZsWh6KHr4UcFeJmTB%2F20260920%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1290277d2b5230b37f6cc0dbc9ccccd6ff5dec87e7b80feabbab4facbe98e0ea"
+			(at 335.28 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-16V~16V 0℃~+70℃ 2 3V~32V 40mA 45nA 5nA 700uA 70dB 7mV 7uV/℃ Built-in compensation、ESD protection SOIC-8 Operational Amplifier ROHS"
+			(at 335.28 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7950"
+			(at 335.28 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "aebcabe6-6aa5-4c4c-8f18-e03c84ff2556")
+		)
+		(pin "1"
+			(uuid "adfdba67-160f-47cf-8ad1-7cdaddadf299")
+		)
+		(pin "6"
+			(uuid "a4efb16b-e7db-4628-a87f-15a8d7c2c192")
+		)
+		(pin "5"
+			(uuid "20be0f4f-f476-4caa-b927-52a8936b12c4")
+		)
+		(pin "8"
+			(uuid "22ed671e-f706-4b3a-8340-cb3dd8b2cf1f")
+		)
+		(pin "4"
+			(uuid "0681ff62-690f-43fa-af2a-d18da4c11c15")
+		)
+		(pin "2"
+			(uuid "ba3b40e7-325c-43e6-90f6-7de321297e7e")
+		)
+		(pin "3"
+			(uuid "8d24af71-0fa6-4741-9db6-83544259ee15")
+		)
+		(instances
+			(project "lathecontrol_v3"
+				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
+					(reference "U4")
+					(unit 2)
 				)
 			)
 		)
@@ -20372,7 +20332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b19c16f-3e84-4ecb-a769-1a3a7e114614")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR035"
 			(at 44.45 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -20432,7 +20392,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR089")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -20451,7 +20411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bf5bbf5-5692-44f5-8b3e-c05ff5029ff0")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR038"
 			(at 54.61 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -20511,7 +20471,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR067")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -20529,7 +20489,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ebfef66-21dc-4d3d-a706-3eb3b669f98b")
-		(property "Reference" "J14"
+		(property "Reference" "J4"
 			(at 209.55 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20596,83 +20556,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 320.04 163.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4ed593f8-ddaf-49db-a3f4-7ede3a02ce46")
-		(property "Reference" "#PWR02"
-			(at 320.04 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 320.167 168.2242 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 320.04 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 320.04 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 320.04 163.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "68f29b05-4fb6-4a5f-8856-57bf5d08c919")
-		)
-		(instances
-			(project "lathecontrol_v3"
-				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR02")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -20689,7 +20573,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "56fb352d-ef4f-40c0-8d52-98cb9d945f40")
-		(property "Reference" "U4"
+		(property "Reference" "U9"
 			(at 260.35 228.8032 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20765,7 +20649,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U4")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -20783,7 +20667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59c06e92-ddcf-42e0-9010-0e3029453233")
-		(property "Reference" "R29"
+		(property "Reference" "R5"
 			(at 127.508 115.6279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20858,7 +20742,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R29")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -20877,7 +20761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b6c3b6b-3f6e-46cf-ab52-ad009f015e10")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR047"
 			(at 86.36 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -20938,7 +20822,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR027")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -20956,7 +20840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c397e4e-29dc-4bf6-af29-e755c82fc46e")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR019"
 			(at 123.19 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -21016,7 +20900,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR076")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -21034,7 +20918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dbf0c07-cf7b-456f-bc8b-b822f37e7282")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR053"
 			(at 62.23 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -21095,7 +20979,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR026")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -21114,7 +20998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dca34ea-7bc9-4e10-b4b4-8fdf82529bd0")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR028"
 			(at 170.18 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -21175,7 +21059,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR096")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -21270,7 +21154,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63fe4032-e817-4ec4-8220-aa046b462fbc")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR027"
 			(at 160.02 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -21331,7 +21215,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR095")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -21348,7 +21232,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64b510d9-0261-433a-b48a-24bbd6c44199")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR064"
 			(at 281.94 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -21407,7 +21291,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR082")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -21425,7 +21309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c40cdd4-6a6c-4075-92d1-9a3425cbe4ef")
-		(property "Reference" "R16"
+		(property "Reference" "R14"
 			(at 154.94 217.3691 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21498,103 +21382,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM2904")
-		(at 372.11 170.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6d9196e4-e518-4cc2-af91-f52cb9b46d3a")
-		(property "Reference" "U3"
-			(at 372.11 160.8582 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM2904"
-			(at 372.11 163.1696 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 372.11 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm358.pdf"
-			(at 372.11 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 372.11 170.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3ac6c40b-c8de-4f4c-89d1-8ab2488bd12c")
-		)
-		(pin "2"
-			(uuid "3e0bc9fb-4d97-406c-8547-8bfb5ab83f72")
-		)
-		(pin "3"
-			(uuid "aa308e58-f3ca-4282-baab-de5130e26b5e")
-		)
-		(pin "4"
-			(uuid "3f40a8de-02ba-4b5a-b71e-dbdadec94834")
-		)
-		(pin "7"
-			(uuid "f8073b16-04c0-46b0-87a4-e65be5a027ca")
-		)
-		(pin "5"
-			(uuid "cfd65dd1-6b21-409c-bb1a-64bfbf9b61c3")
-		)
-		(pin "8"
-			(uuid "0007a282-34ae-42c1-9adb-aaca93f848b3")
-		)
-		(pin "6"
-			(uuid "249d2444-1f36-4ad8-bcd3-019e34d1800b")
-		)
-		(instances
-			(project "lathecontrol_v3"
-				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U3")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -21613,7 +21401,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e64580d-ac9f-496f-a66b-745078d4e151")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR034"
 			(at 31.75 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -21673,104 +21461,8 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR083")
+					(reference "#PWR034")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM2904")
-		(at 372.11 189.23 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "72d8aeab-d5d5-4bd7-b886-453a3cf6112b")
-		(property "Reference" "U3"
-			(at 372.11 179.9082 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM2904"
-			(at 372.11 182.2196 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 372.11 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm358.pdf"
-			(at 372.11 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 372.11 189.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "708db52e-6fe3-46e6-9bbb-7f694bb14551")
-		)
-		(pin "6"
-			(uuid "78663979-c69e-45bc-a5ef-fe619b7094d3")
-		)
-		(pin "7"
-			(uuid "a29175df-4416-4fa9-ba7d-54900316ff21")
-		)
-		(pin "1"
-			(uuid "d5d85adb-ed03-4464-8802-62134672be33")
-		)
-		(pin "2"
-			(uuid "f308478f-89a5-4201-8dde-d5682fa54584")
-		)
-		(pin "8"
-			(uuid "9d18d6dc-c68a-4688-9177-c7a534f81af8")
-		)
-		(pin "4"
-			(uuid "78ed8187-375b-4b24-a7d4-a181ebf83920")
-		)
-		(pin "3"
-			(uuid "2b1d06cc-8974-4052-bf31-aefb3256bb9b")
-		)
-		(instances
-			(project "lathecontrol_v3"
-				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U3")
-					(unit 2)
 				)
 			)
 		)
@@ -21786,7 +21478,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "75b36758-e21c-424e-a046-8c9419d11690")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR055"
 			(at 243.84 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -21845,7 +21537,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR078")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -21864,7 +21556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75eea064-f548-4728-9719-6609dfeef277")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR024"
 			(at 78.74 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -21924,7 +21616,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR069")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -21942,7 +21634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76d7a26e-1b09-40a1-b6f2-e92ae21e2955")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR054"
 			(at 139.7 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -22003,7 +21695,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR032")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -22022,7 +21714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76f9e415-484b-4399-8d2e-321bde709e8f")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR037"
 			(at 119.38 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -22082,7 +21774,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR093")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -22100,7 +21792,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8021632a-fced-4ed3-9593-cc92002eb5d3")
-		(property "Reference" "R14"
+		(property "Reference" "R13"
 			(at 77.47 217.3691 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22173,100 +21865,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Isolator:6N137")
-		(at 328.93 157.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "80428568-afe4-4056-a335-380cdf451006")
-		(property "Reference" "U2"
-			(at 328.93 145.6182 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6N137"
-			(at 328.93 147.9296 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 328.93 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://docs.broadcom.com/docs/AV02-0940EN"
-			(at 307.34 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 328.93 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dad46f9f-399e-47d3-b5f5-dae3498e715b")
-		)
-		(pin "2"
-			(uuid "587f6238-c479-4739-b5e7-4449c267a626")
-		)
-		(pin "3"
-			(uuid "48a9b23b-7313-4445-bd2f-4c909cf733f4")
-		)
-		(pin "5"
-			(uuid "335662d4-0f0b-4d31-923d-b1fa27c77967")
-		)
-		(pin "6"
-			(uuid "da780f93-bf63-4152-a667-5df67a8c4cb1")
-		)
-		(pin "7"
-			(uuid "53c4b5d3-7d64-4e0f-acca-d1898e21830a")
-		)
-		(pin "8"
-			(uuid "4c4eb596-70da-4a59-bcb7-4b7ce6f68ebb")
-		)
-		(instances
-			(project "lathecontrol_v3"
-				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U2")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -22283,7 +21882,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "809f27cf-552c-4c27-a48e-87efbe19bff2")
-		(property "Reference" "D5"
+		(property "Reference" "D3"
 			(at 260.35 218.0082 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22355,7 +21954,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "D5")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -22372,7 +21971,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "80c35fb0-be6f-46f8-96e1-6296d907ea9f")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR058"
 			(at 199.39 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -22431,7 +22030,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR085")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -22448,7 +22047,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82ba0af4-baaf-43cd-8a4e-e2afcaaa586e")
-		(property "Reference" "R26"
+		(property "Reference" "R6"
 			(at 242.57 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22520,7 +22119,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R26")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -22538,7 +22137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8443358b-f97b-47ca-8ab3-65f79054025e")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR09"
 			(at 88.9 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -22598,7 +22197,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR074")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -22616,7 +22215,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84d54a0d-9d81-451d-ba8d-c2c238c5b53e")
-		(property "Reference" "U10"
+		(property "Reference" "U1"
 			(at 80.6959 145.2325 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22856,7 +22455,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U10")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -22873,7 +22472,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "857d9134-ed37-4705-9ecf-5561f792bc4e")
-		(property "Reference" "D9"
+		(property "Reference" "D1"
 			(at 175.768 215.646 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22945,7 +22544,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "D9")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -22962,7 +22561,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a646f79-bcdb-4bc1-93fe-89d9fbf29ff9")
-		(property "Reference" "R20"
+		(property "Reference" "R18"
 			(at 273.558 241.4016 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23036,7 +22635,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R20")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -23055,7 +22654,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b035ea5-999f-4dc6-8d3e-42c983c86e87")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR043"
 			(at 72.39 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -23116,7 +22715,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR023")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -23134,7 +22733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d7bdfd8-bf76-4cfe-bac3-d5409c1d2c31")
-		(property "Reference" "U9"
+		(property "Reference" "U7"
 			(at 130.81 236.5431 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23242,7 +22841,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U9")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -23260,7 +22859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e64b1d2-221a-47cd-bbaa-dfdcb4e45952")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR012"
 			(at 83.82 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -23320,7 +22919,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR073")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -23338,7 +22937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8eb87260-5939-4406-a177-df78669dc9ab")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR041"
 			(at 186.69 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -23398,7 +22997,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR035")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -23416,7 +23015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "944471bf-5fa5-4174-9ddb-e72dc4f43f7b")
-		(property "Reference" "C17"
+		(property "Reference" "C7"
 			(at 93.7641 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23491,7 +23090,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C17")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -23508,7 +23107,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96726acb-3f32-4798-bab6-045de702a0ab")
-		(property "Reference" "J8"
+		(property "Reference" "J7"
 			(at 148.336 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23587,7 +23186,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J8")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -23604,7 +23203,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96e451f5-f758-41f0-a2d2-1b15456fec74")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at 107.95 227.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23677,7 +23276,102 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R15")
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:L78L05_SOT89")
+		(at 327.66 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "973a9683-a1ab-44cc-a596-3a3b5ad5077b")
+		(property "Reference" "U3"
+			(at 327.66 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "78L05G-AB3-R"
+			(at 327.66 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 327.66 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579707879542214656-C71136.pdf?response-content-disposition=attachment%3B%20filename%3DC71136.pdf%3B%20filename%2A%3DUTF-8%27%27C71136.pdf&x-oss-date=20260920T194001Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rSeOiHvql7xJWDNG35ljQAb8lJpaj%2FoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbcFq2cl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkouTljjGjvyAFpORa%2Bb5wchMHn6pr9EWOXuJZUIn3b%2FstWNupKq5ldctHSeoXq108CXVnU5PXYIJBVZSaKWD5sagAGNa4PTP%2BsQT4uwNQvId4Dj%2FoSiHdzxUYlJsSIsQUTzHGvSWWJ7XpaFQsw79QxNH%2B2IIhN3wEiuFum%2FaolyURV51DilcjULMhI8DrZuoNWcLWPvHk7DxfDv6I0SUxF%2FOEsJu5zO071%2FZGsL7CjJoHU0MSAsmnriNrPdwXed%2F2YGTCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYg3R3SvZsWh6KHr4UcFeJmTB%2F20260920%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=34755366ec29bfcc267724e2cc9e7b8ca1585079748ac1453275cb8d43c2cf5a"
+			(at 327.66 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+85℃ 1 1.7V@(40mA) 100mA 2mA 30V 40uV 5V 80dB@(120Hz) Fixed Over Current Protection、Short Circuit Protection、Thermal Shutdown Positive SOT-89-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
+			(at 327.66 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C71136"
+			(at 327.66 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c2f3de3f-13fa-44f6-af05-496a0ad47249")
+		)
+		(pin "1"
+			(uuid "b6935c83-e6f5-4cce-8e05-de9b4fabcddb")
+		)
+		(pin "3"
+			(uuid "80cf23e5-dc6a-49b7-8587-dc6a9feb07be")
+		)
+		(instances
+			(project "lathecontrol_v3"
+				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -23694,7 +23388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "99a6f838-8331-4a24-865f-90d6859dcd34")
-		(property "Reference" "C20"
+		(property "Reference" "C17"
 			(at 189.611 231.2416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23768,7 +23462,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C20")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -23786,7 +23480,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f9860fd-941c-4e5a-a3e5-937ba93b6c97")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR044"
 			(at 111.76 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -23846,7 +23540,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR029")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -23864,7 +23558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a17351df-7e66-4c2e-bda8-e488cbfdacb3")
-		(property "Reference" "C25"
+		(property "Reference" "C8"
 			(at 111.5441 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23939,7 +23633,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C25")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -23957,7 +23651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a227ee4f-2930-48c6-9e5f-5cc68c5c1cee")
-		(property "Reference" "C27"
+		(property "Reference" "C15"
 			(at 46.7741 191.1326 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24032,7 +23726,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C27")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -24049,7 +23743,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a2ae0b63-41d8-4581-a2e3-b7843a618446")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR056"
 			(at 281.94 238.76 0)
 			(hide yes)
 			(show_name no)
@@ -24108,7 +23802,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR081")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -24126,7 +23820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2d25d5c-bc9f-4cca-b659-7f4a572cf181")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR030"
 			(at 195.58 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -24187,7 +23881,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR098")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -24281,7 +23975,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a4cb66ac-a6c7-49ec-964c-53e67a253ca4")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 284.861 241.4016 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24355,7 +24049,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -24372,7 +24066,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5c69e92-a751-40cf-a13d-00b2fdb3709b")
-		(property "Reference" "U8"
+		(property "Reference" "U10"
 			(at 62.992 251.968 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24457,7 +24151,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U8")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -24475,7 +24169,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5f67a0a-01cc-4ba2-8cdf-432ec28e37dc")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR061"
 			(at 53.34 254 0)
 			(hide yes)
 			(show_name no)
@@ -24535,7 +24229,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR071")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -24553,7 +24247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa22b449-8c3f-4e4c-8290-21a76a22230f")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR011"
 			(at 76.2 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -24613,7 +24307,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR052")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -24632,7 +24326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aee11ebc-14e0-4f77-91af-b53e51d977f7")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR031"
 			(at 170.18 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -24692,7 +24386,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR097")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -24710,7 +24404,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2205b40-8413-450a-8ce1-49160f40990e")
-		(property "Reference" "J2"
+		(property "Reference" "J5"
 			(at 164.5412 139.7579 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24791,7 +24485,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J2")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -24808,7 +24502,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b28c676a-9b4a-4b54-ba4c-b7465689a82c")
-		(property "Reference" "R22"
+		(property "Reference" "R17"
 			(at 226.568 231.2416 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24882,7 +24576,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R22")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -24900,7 +24594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b60b3692-1655-4ff7-9714-74a89a1c9ad2")
-		(property "Reference" "R30"
+		(property "Reference" "R12"
 			(at 195.58 178.9897 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24973,7 +24667,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R30")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -24991,7 +24685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9ed6563-0c7b-4dd7-8059-98d0365de92b")
-		(property "Reference" "C11"
+		(property "Reference" "C2"
 			(at 46.7741 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25066,7 +24760,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C11")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -25083,7 +24777,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bae2a54c-3865-4222-a0fe-58185cc3860e")
-		(property "Reference" "U5"
+		(property "Reference" "U8"
 			(at 199.39 218.6432 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25158,15 +24852,16 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U5")
+					(reference "U8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 347.98 157.48 0)
+		(lib_id "Isolator:LTV-817S")
+		(at 281.94 191.77 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25174,31 +24869,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c0efc73e-c9bd-485a-8fd7-8c7c258edcda")
-		(property "Reference" "C6"
-			(at 350.901 156.3116 0)
+		(uuid "bbaba70d-3a40-4312-b6ea-888ed188e5df")
+		(property "Reference" "U17"
+			(at 281.94 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 350.901 158.623 0)
+		(property "Value" "LTV-817S-TA1-C"
+			(at 281.94 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 348.9452 161.29 0)
+		(property "Footprint" "Package_DIP:SMDIP-4_W9.53mm"
+			(at 281.94 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25208,8 +24901,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf"
-			(at 347.98 157.48 0)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588884725758889984-C109227.pdf?response-content-disposition=attachment%3B%20filename%3DC109227.pdf%3B%20filename%2A%3DUTF-8%27%27C109227.pdf&x-oss-date=20260920T193455Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rSeOiHvql7xJWDNG35ljQAb8lJpaj%2FoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbcFq2cl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkouTljjGjvyAFpORa%2Bb5wchMHn6pr9EWOXuJZUIn3b%2FstWNupKq5ldctHSeoXq108CXVnU5PXYIJBVZSaKWD5sagAGNa4PTP%2BsQT4uwNQvId4Dj%2FoSiHdzxUYlJsSIsQUTzHGvSWWJ7XpaFQsw79QxNH%2B2IIhN3wEiuFum%2FaolyURV51DilcjULMhI8DrZuoNWcLWPvHk7DxfDv6I0SUxF%2FOEsJu5zO071%2FZGsL7CjJoHU0MSAsmnriNrPdwXed%2F2YGTCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYg3R3SvZsWh6KHr4UcFeJmTB%2F20260920%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=10b4861f1f01521cfbc45be4a51dae1a8d451dd91fafedbba566f62d06acf255"
+			(at 290.83 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25219,8 +24912,9 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 347.98 157.48 0)
+		(property "Description" "-30℃~+110℃ 1 1.2V 100mV@1mA,20mA 35V 3us 4us@2mA,100Ω 50% 50mA 50mA 5kV 600% 6V DC Phototransistor SMD-4P Transistor, Photovoltaic Output Optoisolators ROHS"
+			(at 281.94 191.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25229,8 +24923,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
-			(at 347.98 157.48 0)
+		(property "LCSC" "C109227"
+			(at 281.94 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25241,15 +24935,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "82472fee-f940-47b3-be7b-8f32061afdb8")
+			(uuid "ddac2de0-5cd8-4262-b17c-dececf6b7007")
 		)
 		(pin "2"
-			(uuid "5393375f-d269-4b12-8a10-9bbc66f7de49")
+			(uuid "29e89306-c02d-4032-863a-9304b1d1d7a2")
+		)
+		(pin "4"
+			(uuid "ae922aea-844d-4181-9d46-4e740a4120bc")
+		)
+		(pin "3"
+			(uuid "dc89de25-1e8b-4691-96f1-2c6c6451d812")
 		)
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C6")
+					(reference "U17")
 					(unit 1)
 				)
 			)
@@ -25268,7 +24968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2896c21-5dc3-4746-9a1e-0435317acda6")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR049"
 			(at 163.83 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -25329,7 +25029,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR033")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -25346,7 +25046,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2a3c04e-9bd8-40a8-8325-4978732f45c4")
-		(property "Reference" "C22"
+		(property "Reference" "C10"
 			(at 62.23 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25421,7 +25121,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C22")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -25440,7 +25140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c85c30a6-66b7-42fe-866a-970107eb629a")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR010"
 			(at 68.58 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -25500,96 +25200,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 316.23 157.48 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ca836443-4678-4ce6-b77d-eb23047f0b11")
-		(property "Reference" "R2"
-			(at 316.23 152.2222 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "180"
-			(at 316.23 154.5336 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 316.23 155.702 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 316.23 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 316.23 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22828"
-			(at 316.23 157.48 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a20723b5-88b4-4661-a320-f8fcefb06598")
-		)
-		(pin "2"
-			(uuid "54edd7f7-fa97-4b12-b3b9-b2f10d337907")
-		)
-		(instances
-			(project "lathecontrol_v3"
-				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R2")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -25607,7 +25218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb581c0f-6f36-45c2-90d6-8dfce77a402e")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR08"
 			(at 73.66 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -25667,7 +25278,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR044")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -25684,7 +25295,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ce57fafe-8964-49b9-8c1a-1a90ad11c66a")
-		(property "Reference" "R18"
+		(property "Reference" "R2"
 			(at 34.29 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25757,7 +25368,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R18")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -25775,7 +25386,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d139d353-9543-4d0b-9c5e-90467eb35892")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR048"
 			(at 121.92 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -25836,7 +25447,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR030")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -25853,7 +25464,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d40bc790-7e2a-4a0e-bbc7-eea584744330")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 251.841 241.4016 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25927,7 +25538,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -25945,7 +25556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4c49897-d577-48a8-8f12-3c561beb472a")
-		(property "Reference" "R19"
+		(property "Reference" "R11"
 			(at 75.1586 179.1279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26020,7 +25631,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R19")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -26039,7 +25650,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d79b35a4-3b85-4571-85d4-9a098a52acb0")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR022"
 			(at 53.34 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -26099,7 +25710,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR059")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -26118,7 +25729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbc3a802-b2da-4684-bb22-4a11543b071f")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR065"
 			(at 53.34 280.67 0)
 			(hide yes)
 			(show_name no)
@@ -26178,7 +25789,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR070")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -26293,7 +25904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de4c16b1-d70a-4e78-baa5-a1530eb70ec9")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR023"
 			(at 158.75 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -26353,7 +25964,104 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR021")
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:LTV-817S")
+		(at 281.94 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2ef486e-699d-45c7-9e5f-7f8f32e98828")
+		(property "Reference" "U16"
+			(at 281.94 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTV-817S-TA1-C"
+			(at 281.94 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:SMDIP-4_W9.53mm"
+			(at 281.94 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588884725758889984-C109227.pdf?response-content-disposition=attachment%3B%20filename%3DC109227.pdf%3B%20filename%2A%3DUTF-8%27%27C109227.pdf&x-oss-date=20260920T193455Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rSeOiHvql7xJWDNG35ljQAb8lJpaj%2FoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbcFq2cl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkouTljjGjvyAFpORa%2Bb5wchMHn6pr9EWOXuJZUIn3b%2FstWNupKq5ldctHSeoXq108CXVnU5PXYIJBVZSaKWD5sagAGNa4PTP%2BsQT4uwNQvId4Dj%2FoSiHdzxUYlJsSIsQUTzHGvSWWJ7XpaFQsw79QxNH%2B2IIhN3wEiuFum%2FaolyURV51DilcjULMhI8DrZuoNWcLWPvHk7DxfDv6I0SUxF%2FOEsJu5zO071%2FZGsL7CjJoHU0MSAsmnriNrPdwXed%2F2YGTCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYg3R3SvZsWh6KHr4UcFeJmTB%2F20260920%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=10b4861f1f01521cfbc45be4a51dae1a8d451dd91fafedbba566f62d06acf255"
+			(at 273.05 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-30℃~+110℃ 1 1.2V 100mV@1mA,20mA 35V 3us 4us@2mA,100Ω 50% 50mA 50mA 5kV 600% 6V DC Phototransistor SMD-4P Transistor, Photovoltaic Output Optoisolators ROHS"
+			(at 281.94 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C109227"
+			(at 281.94 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb832581-36db-4f9e-85d6-438039a11443")
+		)
+		(pin "2"
+			(uuid "bf468338-a053-4e0a-88b3-72a1293a7f7e")
+		)
+		(pin "4"
+			(uuid "c671014a-2f6b-4847-9b19-ed246f8f394d")
+		)
+		(pin "3"
+			(uuid "dc4a663a-5bd4-4f12-b52b-0556941d4198")
+		)
+		(instances
+			(project "lathecontrol_v3"
+				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
+					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -26371,7 +26079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e34cd8f6-a2c6-4400-bb85-88d34b3866a8")
-		(property "Reference" "C10"
+		(property "Reference" "C1"
 			(at 36.6141 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26446,7 +26154,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C10")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -26464,7 +26172,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3a439c0-83c0-4d4c-95cf-6ca769dc201c")
-		(property "Reference" "R17"
+		(property "Reference" "R1"
 			(at 34.29 67.3735 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26537,7 +26245,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R17")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -26555,7 +26263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5e75e7b-2fdf-4688-9f08-c0f169e23738")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR02"
 			(at 82.55 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -26615,8 +26323,119 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR060")
+					(reference "#PWR02")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 353.06 158.75 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7afd997-da62-408f-a27b-77e528ae8193")
+		(property "Reference" "U4"
+			(at 351.79 157.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM358DR2G"
+			(at 351.79 160.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 353.06 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579708932857913344-C7950.pdf?response-content-disposition=attachment%3B%20filename%3DC7950.pdf%3B%20filename%2A%3DUTF-8%27%27C7950.pdf&x-oss-date=20260920T194308Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rSeOiHvql7xJWDNG35ljQAb8lJpaj%2FoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbcFq2cl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkouTljjGjvyAFpORa%2Bb5wchMHn6pr9EWOXuJZUIn3b%2FstWNupKq5ldctHSeoXq108CXVnU5PXYIJBVZSaKWD5sagAGNa4PTP%2BsQT4uwNQvId4Dj%2FoSiHdzxUYlJsSIsQUTzHGvSWWJ7XpaFQsw79QxNH%2B2IIhN3wEiuFum%2FaolyURV51DilcjULMhI8DrZuoNWcLWPvHk7DxfDv6I0SUxF%2FOEsJu5zO071%2FZGsL7CjJoHU0MSAsmnriNrPdwXed%2F2YGTCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYg3R3SvZsWh6KHr4UcFeJmTB%2F20260920%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1290277d2b5230b37f6cc0dbc9ccccd6ff5dec87e7b80feabbab4facbe98e0ea"
+			(at 353.06 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-16V~16V 0℃~+70℃ 2 3V~32V 40mA 45nA 5nA 700uA 70dB 7mV 7uV/℃ Built-in compensation、ESD protection SOIC-8 Operational Amplifier ROHS"
+			(at 353.06 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7950"
+			(at 353.06 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "aebcabe6-6aa5-4c4c-8f18-e03c84ff2556")
+		)
+		(pin "1"
+			(uuid "adfdba67-160f-47cf-8ad1-7cdaddadf299")
+		)
+		(pin "6"
+			(uuid "a4efb16b-e7db-4628-a87f-15a8d7c2c192")
+		)
+		(pin "5"
+			(uuid "20be0f4f-f476-4caa-b927-52a8936b12c4")
+		)
+		(pin "8"
+			(uuid "22ed671e-f706-4b3a-8340-cb3dd8b2cf1f")
+		)
+		(pin "4"
+			(uuid "0681ff62-690f-43fa-af2a-d18da4c11c15")
+		)
+		(pin "2"
+			(uuid "ba3b40e7-325c-43e6-90f6-7de321297e7e")
+		)
+		(pin "3"
+			(uuid "8d24af71-0fa6-4741-9db6-83544259ee15")
+		)
+		(instances
+			(project "lathecontrol_v3"
+				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
+					(reference "U4")
+					(unit 3)
 				)
 			)
 		)
@@ -26633,7 +26452,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "edda7879-78c6-41c3-aa1c-c8ace4f64c22")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR042"
 			(at 34.29 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -26693,7 +26512,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR012")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -26712,7 +26531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee1c651d-280e-4896-83b7-84b9bd299e9e")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR045"
 			(at 149.86 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -26773,7 +26592,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR031")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -26791,7 +26610,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f310e712-6f66-4afb-905c-002dce589092")
-		(property "Reference" "C26"
+		(property "Reference" "C14"
 			(at 21.3741 191.1326 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26866,7 +26685,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C26")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -26885,7 +26704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4c26296-d709-4051-8ae9-97d93b4ec6f7")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR032"
 			(at 207.01 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -26945,7 +26764,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR099")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -26963,7 +26782,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f52837d8-204a-4660-97cb-1ed32452d329")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR029"
 			(at 119.38 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -27023,7 +26842,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR092")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -27041,7 +26860,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f62d4260-9088-4b39-943f-3b69ef256d4f")
-		(property "Reference" "U11"
+		(property "Reference" "U5"
 			(at 87.63 180.7591 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27134,7 +26953,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "U11")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -27152,7 +26971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7794c5e-78bd-419c-94e4-957aef09b644")
-		(property "Reference" "C15"
+		(property "Reference" "C5"
 			(at 75.9841 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27227,7 +27046,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C15")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -27245,7 +27064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9246763-3df3-494c-945c-f31c9792ff45")
-		(property "Reference" "C28"
+		(property "Reference" "C16"
 			(at 121.7041 191.1326 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27320,7 +27139,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C28")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -27339,7 +27158,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa5ca06c-4097-4e0f-b700-09a5773ead8d")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR033"
 			(at 19.05 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -27399,7 +27218,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR077")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -27417,7 +27236,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc3372b6-6ba5-4986-8bf4-f17fc30a9de5")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR046"
 			(at 44.45 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -27478,7 +27297,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "#PWR020")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -27496,7 +27315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe0a99c7-6bcb-4b1b-9f67-523c1a5d1b0f")
-		(property "Reference" "C14"
+		(property "Reference" "C4"
 			(at 67.0941 29.8426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27571,7 +27390,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C14")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -27589,7 +27408,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff3f16e3-aafc-47ac-8328-33d093994b20")
-		(property "Reference" "C24"
+		(property "Reference" "C11"
 			(at 95.0341 50.1626 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27664,7 +27483,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C24")
+					(reference "C11")
 					(unit 1)
 				)
 			)
