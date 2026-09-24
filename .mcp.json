@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "konnect": {
+      "command": "sh",
+      "args": [
+        "-c",
+        "d=$KICAD10_3RD_PARTY; [ -n \"$d\" ] || d=$HOME/.local/share/kicad/10.0/3rdparty; exec \"$d/plugins/com_github_mixelpixx_konnect/bin/konnect\" \"$@\"",
+        "konnect"
+      ]
+    }
+  }
+}
