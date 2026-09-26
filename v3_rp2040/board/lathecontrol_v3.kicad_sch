@@ -2040,7 +2040,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x07"
+		(symbol "Connector:Screw_Terminal_01x06"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2051,7 +2051,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 10.16 0)
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2060,7 +2060,7 @@
 					)
 				)
 			)
-			(property "Value" "Screw_Terminal_01x07"
+			(property "Value" "Screw_Terminal_01x06"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2092,7 +2092,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic screw terminal, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2125,9 +2125,9 @@
 					)
 				)
 			)
-			(symbol "Screw_Terminal_01x07_1_1"
+			(symbol "Screw_Terminal_01x06_1_1"
 				(rectangle
-					(start -1.27 8.89)
+					(start -1.27 6.35)
 					(end 1.27 -8.89)
 					(stroke
 						(width 0.254)
@@ -2135,18 +2135,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 7.9502) (xy 0.3302 7.112)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(polyline
@@ -2212,18 +2200,6 @@
 				(polyline
 					(pts
 						(xy -0.5334 -7.2898) (xy 0.3302 -8.128)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 8.128) (xy 0.508 7.2898)
 					)
 					(stroke
 						(width 0.1524)
@@ -2306,17 +2282,6 @@
 					)
 				)
 				(circle
-					(center 0 7.62)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
 					(center 0 5.08)
 					(radius 0.635)
 					(stroke
@@ -2383,7 +2348,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 7.62 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -2401,7 +2366,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -2419,7 +2384,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -2437,7 +2402,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -2455,7 +2420,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -2473,7 +2438,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -2483,24 +2448,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -13866,7 +13813,7 @@
 		)
 		(uuid "abc913ab-73bb-427c-959b-f122fa3bc261")
 	)
-	(text "VFD INTERFACE - galvanically isolated (see vfd-interface-plan.md)\n- Isolation barrier runs through U15/U16/U17: board slot under each opto,\n   no copper in the keep-out, >= 6-8 mm creepage.\n- COM_ISO is MAINS POTENTIAL. Never tie COM_ISO/V15_ISO/+5V_ISO to GND, PE or enclosure.\n- GP20 VFD_PWM: ~1 kHz PWM. LED sinks into the pin -> 100 % duty = 0 V on VL1\n   (invert in FW). Set pad drive strength to 8 mA on GP20/GP21.\n- GP21 VFD_RUN: ~1 kHz square wave only while FW is healthy (re-arm every loop).\n   No edges -> Q3 releases X4 after ~20 ms. NOTE: GP20/GP21 share PWM slice 2 (A/B).\n- GP22 VFD_STAT: SP1 open-collector readback (P58 = 1 running / 3 fault). Low = active.\n- VFD: P10=2, P11=2, P53=5 (X4 fwd), P50..P52=0. E-stop stays hardwired.\n- D5 BAV99 (basic) replaces the plan's 2x BAT54 (extended); gate pumps to ~3.5 V.\n- Measure the VFD 15/24 V terminal before power-up (78L05 max 30 V, LM358 max 32 V).\n- J8 pin 4 (X5 / reverse) unused - reverse run channel not fitted.\n- F1, J8: no JLCPCB basic part available - LCSC number pending approval."
+	(text "VFD INTERFACE - galvanically isolated (see vfd-interface-plan.md)\n- Isolation barrier runs through U15/U16/U17: board slot under each opto,\n   no copper in the keep-out, >= 6-8 mm creepage.\n- COM_ISO is MAINS POTENTIAL. Never tie COM_ISO/V15_ISO/+5V_ISO to GND, PE or enclosure.\n- GP20 VFD_PWM: ~1 kHz PWM. LED sinks into the pin -> 100 % duty = 0 V on VL1\n   (invert in FW). Set pad drive strength to 8 mA on GP20/GP21.\n- GP21 VFD_RUN: ~1 kHz square wave only while FW is healthy (re-arm every loop).\n   No edges -> Q3 releases X4 after ~20 ms. NOTE: GP20/GP21 share PWM slice 2 (A/B).\n- GP22 VFD_STAT: SP1 open-collector readback (P58 = 1 running / 3 fault). Low = active.\n- VFD: P10=2, P11=2, P53=5 (X4 fwd), P50..P52=0. E-stop stays hardwired.\n- D5 BAV99 (basic) replaces the plan's 2x BAT54 (extended); gate pumps to ~3.5 V.\n- Measure the VFD 15/24 V terminal before power-up (78L05 max 30 V, LM358 max 32 V).\n- J12 6-pole 5.0 mm (KANGNEX WJ127, C192781): VL1, COM, X4, SP1, 15/24V, 10V ref. No reverse (X5).\n- F1: no JLCPCB basic part available - LCSC number pending approval."
 		(exclude_from_sim no)
 		(at 297.18 203.2 0)
 		(effects
@@ -14214,10 +14161,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8ea6d6e-8599-49d7-80ce-c5c690054c6e")
-	)
-	(no_connect
-		(at 391.16 165.1)
-		(uuid "184a77e8-21ac-472f-b3b8-23c59a06f6e8")
 	)
 	(no_connect
 		(at 119.38 227.33)
@@ -16497,6 +16440,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 160.02) (xy 382.27 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc23b189-3c11-4946-ab80-df11901359dc")
+	)
+	(wire
+		(pts
 			(xy 91.44 34.29) (xy 100.33 34.29)
 		)
 		(stroke
@@ -16756,7 +16709,7 @@
 		(uuid "15100898-016e-4441-a93a-89fa77bc7f90")
 	)
 	(label "VFD_SP1"
-		(at 391.16 167.64 180)
+		(at 382.27 165.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16866,7 +16819,7 @@
 		(uuid "39cc1666-abed-478d-8a81-459fa320ecd0")
 	)
 	(label "VFD_VL1"
-		(at 391.16 157.48 180)
+		(at 382.27 157.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16986,7 +16939,7 @@
 		(uuid "6fa3d71f-5add-41fc-a508-b44540975cf9")
 	)
 	(label "VFD_X4"
-		(at 391.16 162.56 180)
+		(at 382.27 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17306,7 +17259,7 @@
 		(uuid "e349930d-3432-4c5e-a67c-a25d53a9b22b")
 	)
 	(label "VFD_24V"
-		(at 391.16 170.18 180)
+		(at 382.27 167.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17326,7 +17279,7 @@
 		(uuid "e7b36f2e-c78f-44f8-9b7b-5634164b92e0")
 	)
 	(label "VFD_10V_REF"
-		(at 391.16 172.72 180)
+		(at 382.27 170.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20795,7 +20748,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a44d3fc-3942-43a8-a481-11859a68cd80")
-		(property "Reference" "R21"
+		(property "Reference" "R56"
 			(at 306.832 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20868,7 +20821,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R21")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -21129,7 +21082,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f205bce-8d8e-4dc2-9ccd-5ad4467659f7")
-		(property "Reference" "R23"
+		(property "Reference" "R58"
 			(at 325.12 86.868 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21202,7 +21155,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R23")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -21383,7 +21336,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2489d2d9-5e43-4c50-ac43-5b7ecd1780a8")
-		(property "Reference" "R26"
+		(property "Reference" "R61"
 			(at 306.832 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21456,7 +21409,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R26")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -21641,7 +21594,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "254bd2bd-6e39-4366-9343-1a78d684344d")
-		(property "Reference" "C22"
+		(property "Reference" "C34"
 			(at 332.105 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21716,7 +21669,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C22")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -21733,7 +21686,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "27bf4e88-b9ca-492b-94c1-6b17f9393bea")
-		(property "Reference" "C26"
+		(property "Reference" "C38"
 			(at 339.725 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21808,7 +21761,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C26")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -21998,7 +21951,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "31fdaa21-51fd-43ef-a488-75a3484a0345")
-		(property "Reference" "R29"
+		(property "Reference" "R64"
 			(at 283.972 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22071,15 +22024,15 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R29")
+					(reference "R64")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x07")
-		(at 396.24 165.1 0)
+		(lib_id "Connector:Screw_Terminal_01x06")
+		(at 387.35 162.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22088,8 +22041,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "331c462c-e472-486a-84f7-6181024aa3e7")
-		(property "Reference" "J8"
-			(at 396.24 154.94 0)
+		(property "Reference" "J12"
+			(at 387.35 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22099,7 +22052,7 @@
 			)
 		)
 		(property "Value" "VFD"
-			(at 396.24 175.26 0)
+			(at 387.35 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22108,8 +22061,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-7-5.08_1x07_P5.08mm_Horizontal"
-			(at 396.24 165.1 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6_1x06_P5.00mm_Horizontal"
+			(at 387.35 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22119,8 +22072,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 396.24 165.1 0)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/3ae111fae917b88c63620f1e2c9f0947.pdf"
+			(at 387.35 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22130,8 +22083,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 396.24 165.1 0)
+		(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 387.35 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22141,8 +22094,27 @@
 				)
 			)
 		)
-		(pin "7"
-			(uuid "e6bbb5a7-9196-45c4-b47c-0f5cab2c67d3")
+		(property "LCSC" "C192781"
+			(at 387.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WJ127-5.0-06P-14-00A"
+			(at 387.35 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
 			(uuid "fb521d35-9719-46da-bf33-a3ee59a66f16")
@@ -22165,7 +22137,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "J8")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -22585,7 +22557,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "38c02ce3-0332-4fb5-982b-6acb3fd1dca1")
-		(property "Reference" "R20"
+		(property "Reference" "R55"
 			(at 276.86 91.948 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22658,7 +22630,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R20")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -23716,7 +23688,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "43513fcd-5408-42c2-b985-181040003acb")
-		(property "Reference" "C28"
+		(property "Reference" "C40"
 			(at 353.695 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23791,7 +23763,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C28")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -23808,7 +23780,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "43dcc710-da0b-490b-80e7-846826d66be7")
-		(property "Reference" "R22"
+		(property "Reference" "R57"
 			(at 312.42 86.868 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23881,7 +23853,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R22")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -24326,7 +24298,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4d4cc52d-a2c6-4515-a83e-fcd02b8620df")
-		(property "Reference" "R27"
+		(property "Reference" "R62"
 			(at 346.202 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24399,7 +24371,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R27")
+					(reference "R62")
 					(unit 1)
 				)
 			)
@@ -24761,7 +24733,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58c76210-55a7-4c11-8884-87fd0c58989f")
-		(property "Reference" "C24"
+		(property "Reference" "C36"
 			(at 389.255 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24836,7 +24808,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C24")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -27698,7 +27670,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93a8d068-302b-4e9b-a992-e8997aa29498")
-		(property "Reference" "R28"
+		(property "Reference" "R63"
 			(at 308.61 157.988 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27771,7 +27743,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R28")
+					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -28330,7 +28302,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c02cb8f-2b8f-4d46-90a2-856d142d2faf")
-		(property "Reference" "C21"
+		(property "Reference" "C33"
 			(at 319.405 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28405,7 +28377,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C21")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -28670,7 +28642,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a1f1e340-87e0-493f-addb-295e42b4b5c1")
-		(property "Reference" "C25"
+		(property "Reference" "C37"
 			(at 308.61 131.445 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28745,7 +28717,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C25")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -29513,7 +29485,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad694b85-4098-4c50-a0fa-d2dda3450103")
-		(property "Reference" "R25"
+		(property "Reference" "R60"
 			(at 276.86 135.128 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29586,7 +29558,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R25")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -29680,7 +29652,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ae2c585b-0ff0-4a8b-8161-371b591efdef")
-		(property "Reference" "R24"
+		(property "Reference" "R59"
 			(at 361.95 89.408 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29753,7 +29725,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "R24")
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -29761,7 +29733,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 391.16 160.02 270)
+		(at 367.03 160.02 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29771,7 +29743,7 @@
 		(dnp no)
 		(uuid "aea364bc-3657-45e9-bc93-a103e3ec8dd6")
 		(property "Reference" "#PWR0129"
-			(at 384.81 160.02 0)
+			(at 360.68 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29782,7 +29754,7 @@
 			)
 		)
 		(property "Value" "COM_ISO"
-			(at 381.635 160.02 90)
+			(at 357.505 160.02 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29792,7 +29764,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 391.16 160.02 0)
+			(at 367.03 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29803,7 +29775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 391.16 160.02 0)
+			(at 367.03 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29814,7 +29786,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 391.16 160.02 0)
+			(at 367.03 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31416,7 +31388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0f21633-6970-4c5f-be9c-56a41172f663")
-		(property "Reference" "C27"
+		(property "Reference" "C39"
 			(at 328.295 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31491,7 +31463,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C27")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -32556,7 +32528,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e453ffad-e646-489b-b1f3-b7f6af1912e7")
-		(property "Reference" "C23"
+		(property "Reference" "C35"
 			(at 368.935 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32631,7 +32603,7 @@
 		(instances
 			(project "lathecontrol_v3"
 				(path "/7233cb6b-d8fd-4fcd-9b4f-8b0ed19b1b12"
-					(reference "C23")
+					(reference "C35")
 					(unit 1)
 				)
 			)
